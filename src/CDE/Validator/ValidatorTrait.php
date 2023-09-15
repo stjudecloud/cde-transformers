@@ -11,9 +11,9 @@ trait ValidatorTrait
      */
     public static function validate(mixed $permissibleValue, string $permissibleValueKey = 'permissible_value'): bool
     {
-        foreach (self::getPermissibleValues() as $case) {
-            if (isset(self::DATA[$case->name][$permissibleValueKey])) {
-                if ($permissibleValue === self::DATA[$case->name][$permissibleValueKey]) {
+        foreach (self::getPermissibleValues() as $data) {
+            if (isset($data[$permissibleValueKey])) {
+                if ($permissibleValue === $data[$permissibleValueKey]) {
                     return true;
                 }
             }
@@ -29,8 +29,8 @@ trait ValidatorTrait
      */
     public static function getPermissibleValues(): array
     {
-        if(method_exists('self', 'cases')) {
-            return self::cases();
+        if (self::DATA) {
+            return self::DATA;
         }
 
         return [];
