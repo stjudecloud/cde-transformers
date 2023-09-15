@@ -7,27 +7,9 @@ use CCDI\CDE\V1\Data\LibrarySource;
 /**
  * @method static LibrarySource transform($permissibleValue)
  */
-enum LibrarySourceTransformer
+class LibrarySourceTransformer extends AbstractTransformer
 {
-    use TransformerTrait;
-    
-    case GENOMIC_DNA;
-    case BULK_CELLS;
-    case BULK_NUCLEI;
-    case BULK_TISSUE;
-    case RNA;
-    case SINGLE_CELLS;
-    case SINGLE_NUCLEI;
-    case GEN0MIC_SINGLE_CELL;
-    case OTHER;
-    case METAGENOMIC;
-    case METATRANSCRIPTOMIC;
-    case SYNTHETIC;
-    case TRANSCRIPTOMIC;
-    case TRANSCRIPTOMIC_SINGLE_CELL;
-    case VIRAL_RNA;
-
-    public const MAPPING = [
+    protected static array $MAPPINGS = [
         [
             'value' => LibrarySource::GENOMIC_DNA,
             'regex' => '/^(genomic dna)$/i'

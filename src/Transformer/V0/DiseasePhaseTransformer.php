@@ -7,20 +7,9 @@ use CCDI\CDE\V1\Data\DiseasePhase;
 /**
  * @method static DiseasePhase transform($permissibleValue)
  */
-enum DiseasePhaseTransformer
+class DiseasePhaseTransformer extends AbstractTransformer
 {
-    use TransformerTrait;
-
-    case UNKNOWN;
-    case NOT_REPORTED;
-    case POST_MORTEM;
-    case INITIAL_DIAGNOSIS;
-    case PROGRESSION;
-    case REFACTORY;
-    case RELAPSE;
-    case RELAPSE_PROGRESSION;
-
-    public const MAPPING = [
+    protected static array $MAPPINGS = [
         [
             'value' => DiseasePhase::UNKNOWN,
             'regex' => '/^(unknown)$/i'

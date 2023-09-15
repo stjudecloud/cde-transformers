@@ -9,21 +9,11 @@ use CCDI\Transformer\V0\TransformerTrait;
 /**
  * @method static Gender transform($permissibleValue)
  */
-enum AcmeGenderTransformer
+class AcmeGenderTransformer extends GenderTransformer
 {
-    use TransformerTrait;
-
-    case UNKNOWN;
-    case NOT_REPORTED;
-    case UNSPECIFIED;
-    case INTERSEX;
-    case FEMALE;
-    case MALE;
-    case CAT;
-
-    public static function getMappings()
+    public static function getMappings(): array
     {
-        $mappings = GenderTransformer::MAPPING;
+        $mappings = GenderTransformer::$MAPPINGS;
 
         $mappings[] =
             [

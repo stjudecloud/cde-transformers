@@ -7,18 +7,9 @@ use CCDI\CDE\V1\Data\Gender;
 /**
  * @method static Gender transform($permissibleValue)
  */
-enum GenderTransformer
+class GenderTransformer extends AbstractTransformer
 {
-    use TransformerTrait;
-
-    case UNKNOWN;
-    case NOT_REPORTED;
-    case UNSPECIFIED;
-    case INTERSEX;
-    case FEMALE;
-    case MALE;
-
-    public const MAPPING = [
+    protected static array $MAPPINGS = [
         [
             'value' => Gender::UNKNOWN,
             'regex' => '/^(unknown)$/i'

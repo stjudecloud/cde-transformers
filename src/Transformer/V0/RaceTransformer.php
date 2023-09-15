@@ -7,20 +7,9 @@ use CCDI\CDE\V1\Data\Race;
 /**
  * @method static Race transform($permissibleValue)
  */
-enum RaceTransformer
+class RaceTransformer extends AbstractTransformer
 {
-    use TransformerTrait;
-
-    case NOT_ALLOWED_TO_COLLECT;
-    case UNKNOWN;
-    case NOT_REPORTED;
-    case WHITE;
-    case ASIAN;
-    case BLACK_OR_AFRICAN_AMERICAN;
-    case NATIVE_HAWAIIAN_OR_OTHER_PACIFIC_ISLANDER;
-    case AMERICAN_INDIAN_OR_ALASKA_NATIVE;
-
-    public const MAPPING = [
+    protected static array $MAPPINGS = [
         [
             'value' => Race::NOT_ALLOWED_TO_COLLECT,
             'regex' => '/^(not allowed( to collect)?)$/i'

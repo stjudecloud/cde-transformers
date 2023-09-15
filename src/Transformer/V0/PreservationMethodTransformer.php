@@ -7,18 +7,9 @@ use CCDI\CDE\V1\Data\PreservationMethod;
 /**
  * @method static PreservationMethod transform($permissibleValue)
  */
-enum PreservationMethodTransformer
+class PreservationMethodTransformer extends AbstractTransformer
 {
-    use TransformerTrait;
-
-    case CRYOPRESERVED;
-    case FFPE;
-    case FRESH;
-    case FROZEN;
-    case OCT;
-    case SNAP_FROZEN;
-
-    public const MAPPING = [
+    protected static array $MAPPINGS = [
         [
             'value' => PreservationMethod::CRYOPRESERVED,
             'regex' => '/^(cryopreserved)$/i'

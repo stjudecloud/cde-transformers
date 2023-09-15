@@ -7,17 +7,9 @@ use CCDI\CDE\V2\Data\Ethnicity;
 /**
  * @method static Ethnicity transform($permissibleValue)
  */
-enum EthnicityTransformer
+class EthnicityTransformer extends AbstractTransformer
 {
-    use TransformerTrait;
-
-    case NOT_ALLOWED_TO_COLLECT;
-    case HISPANIC_OR_LATINO;
-    case NOT_HISPANIC_OR_LATINO;
-    case UNKNOWN;
-    case NOT_REPORTED;
-
-    public const MAPPING = [
+    protected static array $MAPPINGS = [
         [
             'value' => Ethnicity::NOT_ALLOWED_TO_COLLECT,
             'regex' => '/^(not allowed( to collect)?)$/i'

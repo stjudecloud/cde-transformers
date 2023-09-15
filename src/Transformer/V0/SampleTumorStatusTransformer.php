@@ -7,16 +7,9 @@ use CCDI\CDE\V2\Data\SampleTumorStatus;
 /**
  * @method static SampleTumorStatus transform($permissibleValue)
  */
-enum SampleTumorStatusTransformer
+class SampleTumorStatusTransformer extends AbstractTransformer
 {
-    use TransformerTrait;
-
-    case ABNORMAL;
-    case NORMAL;
-    case PERITUMORAL;
-    case TUMOR;
-
-    public const MAPPING = [
+    protected static array $MAPPINGS = [
         [
             'value' => SampleTumorStatus::ABNORMAL,
             'regex' => '/^(abnormal)$/i'

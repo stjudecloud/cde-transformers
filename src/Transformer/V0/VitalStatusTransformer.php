@@ -7,17 +7,9 @@ use CCDI\CDE\V1\Data\VitalStatus;
 /**
  * @method static VitalStatus transform($permissibleValue)
  */
-enum VitalStatusTransformer
+class VitalStatusTransformer extends AbstractTransformer
 {
-    use TransformerTrait;
-
-    case NOT_REPORTED;
-    case UNKNOWN;
-    case ALIVE;
-    case DEAD;
-    case UNSPECIFIED;
-
-    public const MAPPING = [
+    protected static array $MAPPINGS = [
         [
             'value' => VitalStatus::NOT_REPORTED,
             'regex' => '/^(not reported)$/i'

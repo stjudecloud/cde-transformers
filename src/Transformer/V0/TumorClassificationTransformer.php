@@ -7,17 +7,9 @@ use CCDI\CDE\V1\Data\TumorClassification;
 /**
  * @method static TumorClassification transform($permissibleValue)
  */
-enum TumorClassificationTransformer
+class TumorClassificationTransformer extends AbstractTransformer
 {
-    use TransformerTrait;
-
-    case METASTATIC;
-    case UNKNOWN;
-    case NOT_REPORTED;
-    case PRIMARY;
-    case REGIONAL;
-
-    public const MAPPING = [
+    protected static array $MAPPINGS = [
         [
             'value' => TumorClassification::METASTATIC,
             'regex' => '/^(metastatic)?)$/i'
