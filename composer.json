@@ -1,0 +1,23 @@
+{
+    "name": "ccdi/transformers",
+    "description": "A selection of PHP classes for transforming subject, file, diagnosis and sample values into the correct CDE values.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jake Noble",
+            "email": "jake.noble@stjude.org"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "CCDI\\": "src/"
+      }
+    },
+    "require": {
+      "php": ">=8.2.7"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.3"
+    }
+}
