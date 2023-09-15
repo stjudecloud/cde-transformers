@@ -1,0 +1,57 @@
+<?php
+
+namespace CCDI\Transformer\V0;
+
+use CCDI\CDE\V1\Data\DiseasePhase;
+
+/**
+ * @method static DiseasePhase transform($permissibleValue)
+ */
+enum DiseasePhaseTransformer
+{
+    use TransformerTrait;
+
+    case UNKNOWN;
+    case NOT_REPORTED;
+    case POST_MORTEM;
+    case INITIAL_DIAGNOSIS;
+    case PROGRESSION;
+    case REFACTORY;
+    case RELAPSE;
+    case RELAPSE_PROGRESSION;
+
+    public const MAPPING = [
+        [
+            'value' => DiseasePhase::UNKNOWN,
+            'regex' => '/^(unknown)$/i'
+        ],
+        [
+            'value' => DiseasePhase::NOT_REPORTED,
+            'regex' => '/^(not reported)$/i'
+        ],
+        [
+            'value' => DiseasePhase::POST_MORTEM,
+            'regex' => '/^(post(\-| )mortem)$/i'
+        ],
+        [
+            'value' => DiseasePhase::INITIAL_DIAGNOSIS,
+            'regex' => '/^(initial diagnosis)$/i'
+        ],
+        [
+            'value' => DiseasePhase::PROGRESSION,
+            'regex' => '/^(progression)$/i'
+        ],
+        [
+            'value' => DiseasePhase::REFACTORY,
+            'regex' => '/^(refactory)$/i'
+        ],
+        [
+            'value' => DiseasePhase::RELAPSE,
+            'regex' => '/^(relapse)$/i'
+        ],
+        [
+            'value' => DiseasePhase::RELAPSE_PROGRESSION,
+            'regex' => '/^(relapse(\/| )progression)$/i'
+        ]
+    ];
+}

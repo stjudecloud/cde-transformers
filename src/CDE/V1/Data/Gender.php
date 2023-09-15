@@ -3,8 +3,7 @@
 namespace CCDI\CDE\V1\Data;
 
 use ArrayAccess;
-use CCDI\CDE\V1\Validator\ValidatorTrait;
-use CCDI\Exception\Transformer\ReadOnlyArrayAccess;
+use CCDI\CDE\Validator\ValidatorTrait;
 
 enum Gender implements ArrayAccess
 {
@@ -18,20 +17,23 @@ enum Gender implements ArrayAccess
      * PHP enums can only be strings or integers, which limits the data that can be stored against each enum.
      * Therefore, the const DATA is an array of values mapped to the
      */
-    case INTERSEX;
-    case NOT_REPORTED;
     case UNKNOWN;
+    case NOT_REPORTED;
     case UNSPECIFIED;
+    case INTERSEX;
     case FEMALE;
     case MALE;
 
+    /**
+     * An array containing all data for each enum case, the value should always be mapped to an enum case
+     */
     private const DATA = [
         [
-            'value' => self::INTERSEX,
-            'permissible_value' => 'Intersex',
-            'long_name' => 'Intersex',
-            'public_id' => 2575558,
-            'concept_code' => 'C45908'
+            'value' => self::UNKNOWN,
+            'permissible_value' => 'Unknown',
+            'long_name' => 'Unknown',
+            'public_id' => 2575365,
+            'concept_code' => 'C17998'
         ],
         [
             'value' => self::NOT_REPORTED,
@@ -41,18 +43,18 @@ enum Gender implements ArrayAccess
             'concept_code' => 'C43234'
         ],
         [
-            'value' => self::UNKNOWN,
-            'permissible_value' => 'Unknown',
-            'long_name' => 'Unknown',
-            'public_id' => 2575365,
-            'concept_code' => 'C17998'
-        ],
-        [
             'value' => self::UNSPECIFIED,
             'permissible_value' => 'Unspecified',
             'long_name' => 'Unspecified',
             'public_id' => 2573360,
             'concept_code' => 'C38046'
+        ],
+        [
+            'value' => self::INTERSEX,
+            'permissible_value' => 'Intersex',
+            'long_name' => 'Intersex',
+            'public_id' => 2575558,
+            'concept_code' => 'C45908'
         ],
         [
             'value' => self::FEMALE,
@@ -69,36 +71,4 @@ enum Gender implements ArrayAccess
             'concept_code' => 'C46109'
         ],
     ];
-
-    public function offsetExists($offset): bool
-    {
-        var_dump(array_column(self::DATA, 'value'));
-        return false;
-        //return isset();
-    }
-
-    public function offsetGet($offset): mixed
-    {
-        if (!$this->offsetExists($offset)) {
-            return null;
-        }
-
-        return self::DATA[$this->name][$offset];
-    }
-
-    /**
-     * @throws ReadOnlyArrayAccess
-     */
-    public function offsetSet(mixed $offset, mixed $value): void
-    {
-        throw new ReadOnlyArrayAccess();
-    }
-
-    /**
-     * @throws ReadOnlyArrayAccess
-     */
-    public function offsetUnset(mixed $offset): void
-    {
-        throw new ReadOnlyArrayAccess();
-    }
 }
