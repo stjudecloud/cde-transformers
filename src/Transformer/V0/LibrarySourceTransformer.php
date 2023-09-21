@@ -32,15 +32,15 @@ class LibrarySourceTransformer extends AbstractTransformer
         ],
         [
             'value' => LibrarySource::SINGLE_CELLS,
-            'regex' => '/^(single cells)$/i'
+            'regex' => '/^(single(-| )?cells)$/i'
         ],
         [
             'value' => LibrarySource::SINGLE_NUCLEI,
-            'regex' => '/^(single nuclei)$/i'
+            'regex' => '/^(single(-| )?nuclei)$/i'
         ],
         [
             'value' => LibrarySource::GEN0MIC_SINGLE_CELL,
-            'regex' => '/^(genmoic single cell)$/i'
+            'regex' => '/^(genomic single cell)$/i'
         ],
         [
             'value' => LibrarySource::OTHER,

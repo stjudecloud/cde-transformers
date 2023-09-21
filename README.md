@@ -1,2 +1,1 @@
-# cde-transformers
-TODO
+vendor/bin/phpunit tests/

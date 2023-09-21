@@ -12,7 +12,7 @@ class TumorClassificationTransformer extends AbstractTransformer
     protected static array $MAPPINGS = [
         [
             'value' => TumorClassification::METASTATIC,
-            'regex' => '/^(metastatic)?)$/i'
+            'regex' => '/^(metastatic)$/i'
         ],
         [
             'value' => TumorClassification::UNKNOWN,

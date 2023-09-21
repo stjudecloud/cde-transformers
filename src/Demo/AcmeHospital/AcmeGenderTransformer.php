@@ -4,7 +4,6 @@ namespace CCDI\Demo\AcmeHospital;
 
 use CCDI\CDE\V1\Data\Gender;
 use CCDI\Transformer\V0\GenderTransformer;
-use CCDI\Transformer\V0\TransformerTrait;
 
 /**
  * @method static Gender transform($permissibleValue)

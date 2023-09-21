@@ -28,7 +28,7 @@ enum Race implements ArrayAccess
         ],
         [
             'value' => self::NOT_REPORTED,
-            'permissible_value' => 'Not reported',
+            'permissible_value' => 'Not Reported',
             'long_name' => 'Not Reported',
             'public_id' => 2572578,
             'concept_code' => 'C43234'
