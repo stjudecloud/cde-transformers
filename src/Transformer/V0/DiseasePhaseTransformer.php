@@ -5,7 +5,7 @@ namespace CCDI\Transformer\V0;
 use CCDI\CDE\V1\Data\DiseasePhase;
 
 /**
- * @method static DiseasePhase transform($permissibleValue)
+ * @method static DiseasePhase transform($permissibleValue, $key = null)
  */
 class DiseasePhaseTransformer extends AbstractTransformer
 {

@@ -5,7 +5,7 @@ namespace CCDI\Transformer\V0;
 use CCDI\CDE\V1\Data\VitalStatus;
 
 /**
- * @method static VitalStatus transform($permissibleValue)
+ * @method static VitalStatus transform($permissibleValue, $key = null)
  */
 class VitalStatusTransformer extends AbstractTransformer
 {

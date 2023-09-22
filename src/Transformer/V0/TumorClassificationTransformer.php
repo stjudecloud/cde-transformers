@@ -5,7 +5,7 @@ namespace CCDI\Transformer\V0;
 use CCDI\CDE\V1\Data\TumorClassification;
 
 /**
- * @method static TumorClassification transform($permissibleValue)
+ * @method static TumorClassification transform($permissibleValue, $key = null)
  */
 class TumorClassificationTransformer extends AbstractTransformer
 {

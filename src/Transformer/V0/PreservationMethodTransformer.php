@@ -5,7 +5,7 @@ namespace CCDI\Transformer\V0;
 use CCDI\CDE\V1\Data\PreservationMethod;
 
 /**
- * @method static PreservationMethod transform($permissibleValue)
+ * @method static PreservationMethod transform($permissibleValue, $key = null)
  */
 class PreservationMethodTransformer extends AbstractTransformer
 {

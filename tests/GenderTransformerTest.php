@@ -9,19 +9,19 @@ class GenderTransformerTest extends TestCase
     public function testMaleInput()
     {
         $this->assertTrue(Gender::validate('Male'));
-        $this->assertTrue(Gender::validate(GenderTransformer::transform('MALE')['permissible_value']));
-        $this->assertTrue(Gender::validate(GenderTransformer::transform('male')['permissible_value']));
-        $this->assertTrue(Gender::validate(GenderTransformer::transform('m')['permissible_value']));
-        $this->assertTrue(Gender::validate(GenderTransformer::transform('M')['permissible_value']));
+        $this->assertTrue(Gender::validate(GenderTransformer::transform('MALE', 'permissible_value')));
+        $this->assertTrue(Gender::validate(GenderTransformer::transform('male', 'permissible_value')));
+        $this->assertTrue(Gender::validate(GenderTransformer::transform('m', 'permissible_value')));
+        $this->assertTrue(Gender::validate(GenderTransformer::transform('M', 'permissible_value')));
     }
 
     public function testFemaleInput()
     {
         $this->assertTrue(Gender::validate('Female'));
-        $this->assertTrue(Gender::validate(GenderTransformer::transform('FEMALE')['permissible_value']));
-        $this->assertTrue(Gender::validate(GenderTransformer::transform('female')['permissible_value']));
-        $this->assertTrue(Gender::validate(GenderTransformer::transform('f')['permissible_value']));
-        $this->assertTrue(Gender::validate(GenderTransformer::transform('F')['permissible_value']));
+        $this->assertTrue(Gender::validate(GenderTransformer::transform('FEMALE', 'permissible_value')));
+        $this->assertTrue(Gender::validate(GenderTransformer::transform('female', 'permissible_value')));
+        $this->assertTrue(Gender::validate(GenderTransformer::transform('f', 'permissible_value')));
+        $this->assertTrue(Gender::validate(GenderTransformer::transform('F', 'permissible_value')));
     }
 
     public function testUnknownInput()

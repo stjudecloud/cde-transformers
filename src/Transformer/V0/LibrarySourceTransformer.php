@@ -5,7 +5,7 @@ namespace CCDI\Transformer\V0;
 use CCDI\CDE\V1\Data\LibrarySource;
 
 /**
- * @method static LibrarySource transform($permissibleValue)
+ * @method static LibrarySource transform($permissibleValue, $key = null)
  */
 class LibrarySourceTransformer extends AbstractTransformer
 {
