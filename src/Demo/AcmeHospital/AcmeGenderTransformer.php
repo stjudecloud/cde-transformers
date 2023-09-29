@@ -6,7 +6,7 @@ use CCDI\CDE\V1\Data\Gender;
 use CCDI\Transformer\V0\GenderTransformer;
 
 /**
- * @method static Gender transform($permissibleValue)
+ * @method static Gender transform($permissibleValue, $key = null)
  */
 class AcmeGenderTransformer extends GenderTransformer
 {

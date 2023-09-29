@@ -5,7 +5,7 @@ namespace CCDI\Transformer\V0;
 use CCDI\CDE\V2\Data\SampleTumorStatus;
 
 /**
- * @method static SampleTumorStatus transform($permissibleValue, $key = null)
+ * @method static SampleTumorStatus|string transform($permissibleValue, $key = null)
  */
 class SampleTumorStatusTransformer extends AbstractTransformer
 {
