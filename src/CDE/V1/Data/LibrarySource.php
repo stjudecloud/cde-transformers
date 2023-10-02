@@ -90,7 +90,7 @@ in protein synthesis.'
             'description' => 'A biospecimen that contains the contents of a single nucleus.'
         ],
         [
-            'value' => self::GEN0MIC_SINGLE_CELL,
+            'value' => self::GENOMIC_SINGLE_CELL,
             'permissible_value' => 'Genomic Single Cell',
             'long_name' => 'Genomic Single Cell',
             'public_id' => 6273400,
