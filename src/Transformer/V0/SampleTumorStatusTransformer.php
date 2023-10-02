@@ -20,7 +20,7 @@ class SampleTumorStatusTransformer extends AbstractTransformer
         ],
         [
             'value' => SampleTumorStatus::PERITUMORAL,
-            'regex' => '/^(peritumoral)$/i'
+            'regex' => '/^(peritumoral|peritumoural)$/i'
         ],
         [
             'value' => SampleTumorStatus::TUMOR,
