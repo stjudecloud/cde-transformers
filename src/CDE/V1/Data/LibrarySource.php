@@ -16,7 +16,7 @@ enum LibrarySource implements ArrayAccess
     case RNA;
     case SINGLE_CELLS;
     case SINGLE_NUCLEI;
-    case GEN0MIC_SINGLE_CELL;
+    case GENOMIC_SINGLE_CELL;
     case OTHER;
     case METAGENOMIC;
     case METATRANSCRIPTOMIC;
