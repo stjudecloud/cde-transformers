@@ -39,7 +39,7 @@ class LibrarySourceTransformer extends AbstractTransformer
             'regex' => '/^(single(-| )?nuclei)$/i'
         ],
         [
-            'value' => LibrarySource::GEN0MIC_SINGLE_CELL,
+            'value' => LibrarySource::GENOMIC_SINGLE_CELL,
             'regex' => '/^(genomic single cell)$/i'
         ],
         [
