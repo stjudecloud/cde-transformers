@@ -35,7 +35,7 @@ enum LibrarySource implements ArrayAccess
             'permissible_value' => 'Genomic DNA',
             'long_name' => 'Genomic DNA',
             'public_id' => 6273408,
-            'concept_code' => 'C95940',
+            'concept_code' => ['C95940'],
             'description' => 'The DNA that is part of the normal chromosomal complement of an organism.'
         ],
         [
@@ -43,7 +43,7 @@ enum LibrarySource implements ArrayAccess
             'permissible_value' => 'Bulk cells',
             'long_name' => 'Bulk Cell Specimen',
             'public_id' => 7592130,
-            'concept_code' => 'C178223',
+            'concept_code' => ['C178223'],
             'description' => 'A biospecimen consisting of multiple cells as a pool.'
         ],
         [
@@ -51,7 +51,7 @@ enum LibrarySource implements ArrayAccess
             'permissible_value' => 'Bulk nuclei',
             'long_name' => 'Bulk Nucleus Specimen',
             'public_id' => 7592129,
-            'concept_code' => 'C178224',
+            'concept_code' => ['C178224'],
             'description' => 'A biospecimen consisting of multiple nuclei as a pool.'
         ],
         [
@@ -59,7 +59,7 @@ enum LibrarySource implements ArrayAccess
             'permissible_value' => 'Bulk tissue',
             'long_name' => 'Bulk Tissue Specimen',
             'public_id' => 7592128,
-            'concept_code' => 'C178225',
+            'concept_code' => ['C178225'],
             'description' => 'A biospecimen either derived from a whole tissue specimen or tissue 
 section, which may consist of heterogeneous cells or tissues.'
         ],
@@ -68,7 +68,7 @@ section, which may consist of heterogeneous cells or tissues.'
             'permissible_value' => 'RNA',
             'long_name' => 'Ribonucleic Acid',
             'public_id' => 5485589,
-            'concept_code' => 'C812',
+            'concept_code' => ['C812'],
             'description' => 'Single-stranded long chain of nucleotides containing ribose. It is the end 
 product of DNA transcription by the enzyme RNA polymerase. It is essential 
 in protein synthesis.'
@@ -78,7 +78,7 @@ in protein synthesis.'
             'permissible_value' => 'Single-cells',
             'long_name' => 'Single Cell Specimen',
             'public_id' => 7592127,
-            'concept_code' => 'C178226',
+            'concept_code' => ['C178226'],
             'description' => 'A biospecimen that contains the contents of a single cell.'
         ],
         [
@@ -86,7 +86,7 @@ in protein synthesis.'
             'permissible_value' => 'Single-nuclei',
             'long_name' => 'Single Nucleus Specimen',
             'public_id' => 7592126,
-            'concept_code' => 'C178227',
+            'concept_code' => ['C178227'],
             'description' => 'A biospecimen that contains the contents of a single nucleus.'
         ],
         [
@@ -94,7 +94,7 @@ in protein synthesis.'
             'permissible_value' => 'Genomic Single Cell',
             'long_name' => 'Genomic Single Cell',
             'public_id' => 6273400,
-            'concept_code' => '',
+            'concept_code' => [],
             'description' => 'Genomic DNA from individual cells'
         ],
         [
@@ -102,7 +102,7 @@ in protein synthesis.'
             'permissible_value' => 'Other',
             'long_name' => 'Sequencing Library Other Source',
             'public_id' => 6287886,
-            'concept_code' => 'C148073:C17649:C25683',
+            'concept_code' => ['C148073','C17649','C25683'],
             'description' => 'A collection of double stranded DNA fragments flanked by oligonucleotide 
 sequence adapters to enable their analysis by high-throughput sequencing.: 
 Different than the one(s) previously specified or mentioned.: Where 
@@ -113,7 +113,7 @@ something is available or from where it originates.'
             'permissible_value' => 'Metagenomic',
             'long_name' => 'Metagenomic',
             'public_id' => 6273405,
-            'concept_code' => '',
+            'concept_code' => [],
             'description' => 'Mixed material from metagenome'
         ],
         [
@@ -121,7 +121,7 @@ something is available or from where it originates.'
             'permissible_value' => 'Metatranscriptomic',
             'long_name' => 'Metatranscriptomic',
             'public_id' => 6273404,
-            'concept_code' => '',
+            'concept_code' => [],
             'description' => 'Transcription products from community targets'
         ],
         [
@@ -129,7 +129,7 @@ something is available or from where it originates.'
             'permissible_value' => 'Synthetic',
             'long_name' => 'Synthetic',
             'public_id' => 6273403,
-            'concept_code' => '',
+            'concept_code' => [],
             'description' => 'Synthetic DNA'
         ],
         [
@@ -137,7 +137,7 @@ something is available or from where it originates.'
             'permissible_value' => 'Transcriptomic',
             'long_name' => 'Transcriptomic',
             'public_id' => 6273406,
-            'concept_code' => '',
+            'concept_code' => [],
             'description' => 'Transcription products or non genomic DNA (EST, cDNA, RT-PCR, screened 
 libraries)'
         ],
@@ -146,7 +146,7 @@ libraries)'
             'permissible_value' => 'Transcriptomic Single Cell',
             'long_name' => 'Transcriptomic Single Cell',
             'public_id' => 6273399,
-            'concept_code' => '',
+            'concept_code' => [],
             'description' => 'Transcription products from individual cells'
         ],
         [
@@ -154,7 +154,7 @@ libraries)'
             'permissible_value' => 'Viral RNA',
             'long_name' => 'Viral Small RNA',
             'public_id' => 6273402,
-            'concept_code' => 'C101143',
+            'concept_code' => ['C101143'],
             'description' => 'Small non-coding RNA that is encoded by viral DNA and transcribed by 
 virally-infected cells.'
         ]

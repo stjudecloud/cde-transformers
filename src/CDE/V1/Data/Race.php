@@ -28,7 +28,7 @@ enum Race implements ArrayAccess
             'permissible_value' => 'Not allowed to collect',
             'long_name' => 'Not Allowed To Collect',
             'public_id' => 6662191,
-            'concept_code' => 'C141478',
+            'concept_code' => ['C141478'],
             'description' => 'An indicator that specifies that a collection event was not permitted.'
         ],
         [
@@ -36,7 +36,7 @@ enum Race implements ArrayAccess
             'permissible_value' => 'Not Reported',
             'long_name' => 'Not Reported',
             'public_id' => 2572578,
-            'concept_code' => 'C43234',
+            'concept_code' => ['C43234'],
             'description' => 'Not provided or available.'
         ],
         [
@@ -44,7 +44,7 @@ enum Race implements ArrayAccess
             'permissible_value' => 'Unknown',
             'long_name' => 'Unknown',
             'public_id' => 2572577,
-            'concept_code' => 'C17998',
+            'concept_code' => ['C17998'],
             'description' => 'Not known, not observed, not recorded, or refused.'
         ],
         [
@@ -52,7 +52,7 @@ enum Race implements ArrayAccess
             'permissible_value' => 'Asian',
             'long_name' => 'Asian',
             'public_id' => 2572233,
-            'concept_code' => 'C41260',
+            'concept_code' => ['C41260'],
             'description' => 'A person having origins in any of the original peoples of the Far East, 
 Southeast Asia, or the Indian subcontinent, including for example, 
 Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the Philippine 
@@ -63,7 +63,7 @@ Islands, Thailand, and Vietnam. (OMB)'
             'permissible_value' => 'White',
             'long_name' => 'White',
             'public_id' => 2572236,
-            'concept_code' => 'C41261',
+            'concept_code' => ['C41261'],
             'description' => 'Denotes person with European, Middle Eastern, or North African ancestral 
 origin who identifies, or is identified, as White.'
         ],
@@ -72,7 +72,7 @@ origin who identifies, or is identified, as White.'
             'permissible_value' => 'Black or African American',
             'long_name' => 'Black or African American',
             'public_id' => 2572313,
-            'concept_code' => 'C16352',
+            'concept_code' => ['C16352'],
             'description' => 'A person having origins in any of the Black racial groups of Africa. Terms 
 such as ""Haitian"" or ""Negro"" can be used in addition to ""Black or African 
 American"". (OMB)'
@@ -82,7 +82,7 @@ American"". (OMB)'
             'permissible_value' => 'American Indian or Alaska Native',
             'long_name' => 'American Indian or Alaska Native',
             'public_id' => 2572232,
-            'concept_code' => 'C41259',
+            'concept_code' => ['C41259'],
             'description' => 'A person having origins in any of the original peoples of North and South 
 America (including Central America) and who maintains tribal affiliation or 
 community attachment. (OMB)'
@@ -92,7 +92,7 @@ community attachment. (OMB)'
             'permissible_value' => 'Native Hawaiian or other Pacific Islander',
             'long_name' => 'Native Hawaiian or Other Pacific Islander',
             'public_id' => 2572235,
-            'concept_code' => 'C41219',
+            'concept_code' => ['C41219'],
             'description' => 'Denotes a person having origins in any of the original peoples of Hawaii, 
 Guam, Samoa, or other Pacific Islands. The term covers particularly people 
 who identify themselves as part-Hawaiian, Native Hawaiian, Guamanian or 

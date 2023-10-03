@@ -36,11 +36,11 @@ class RaceTransformer extends AbstractTransformer
         ],
         [
             'value' => Race::NATIVE_HAWAIIAN_OR_OTHER_PACIFIC_ISLANDER,
-            'regex' => '/^(native hawaiian or other pacific islander)$/i'
+            'regex' => '/^(native hawaiian|native hawaiian or other pacific islander|other pacific islander|pacific islander)$/i'
         ],
         [
             'value' => Race::AMERICAN_INDIAN_OR_ALASKA_NATIVE,
-            'regex' => '/^(american indian or alaska native)$/i'
+            'regex' => '/^(american indian|american indian or alaska native|alaska native)$/i'
         ]
     ];
 }

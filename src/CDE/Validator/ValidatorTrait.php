@@ -2,7 +2,7 @@
 
 namespace CCDI\CDE\Validator;
 
-use CCDI\Exception\Transformer\ReadOnlyArrayAccess;
+use CCDI\CDE\Exception\ReadOnlyArrayAccess;
 
 trait ValidatorTrait
 {
@@ -23,9 +23,8 @@ trait ValidatorTrait
     }
 
     /**
-     * By default, we assume an Enum is being used and self::cases() is used to obtain an error of permissible values.
-     * The Trait's child could overwrite this method and use some a different array, other than the one provided from
-     * self::cases()
+     * Return private const DATA if it's present, there is no way of guaranteeing a class using this Trait has the DATA
+     * const, so we must first check for self:DATA before attempting to return DATA.
      */
     public static function getPermissibleValues(): array
     {
@@ -36,15 +35,20 @@ trait ValidatorTrait
         return [];
     }
 
-
-    public function offsetExists($offset): bool
-    {
-        return $this->offsetGet($offset) ?? false;
-    }
-
+    /**
+     * All Data classes (src/CDE/Vx/Data/) implement ArrayAccess, this enables array access against the Object's DATA
+     * const directly, without the need to use DATA.
+     *
+     * E.g. this is possible to directly access the long_name for FEMALE from Data Gender::FEMALE['long_name']
+     *
+     * The alternative would be need to use Gender::Data and iterate over the elements to find Gender::FEMALE
+     *
+     * @param $offset
+     * @return mixed
+     */
     public function offsetGet($offset): mixed
     {
-        return array_reduce(self::DATA, function ($carry, $item) use ($offset) {
+        return array_reduce(self::getPermissibleValues(), function ($carry, $item) use ($offset) {
             if ($carry) {
                 return $carry;
             }
@@ -58,8 +62,15 @@ trait ValidatorTrait
     }
 
     /**
+     * As offsetGet(), but returns a boolean based on if the $offset is present
+     */
+    public function offsetExists($offset): bool
+    {
+        return $this->offsetGet($offset) ?? false;
+    }
+
+    /**
      * The const DATA cannot be modified
-     *
      * @throws ReadOnlyArrayAccess
      */
     public function offsetSet(mixed $offset, mixed $value): void

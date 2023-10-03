@@ -1,6 +1,6 @@
 <?php
 
-namespace CCDI\Exception\Transformer;
+namespace CCDI\CDE\Exception;
 
 use Exception;
 

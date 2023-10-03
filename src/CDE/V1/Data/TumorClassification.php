@@ -25,7 +25,7 @@ enum TumorClassification implements ArrayAccess
             'permissible_value' => 'Metastatic',
             'long_name' => 'Metastatic',
             'public_id' => 5189148,
-            'concept_code' => 'C14174',
+            'concept_code' => ['C14174'],
             'description' => 'A term referring to the clinical or pathologic observation of a tumor 
 extension from its original site of growth to another anatomic site.'
         ],
@@ -34,7 +34,7 @@ extension from its original site of growth to another anatomic site.'
             'permissible_value' => 'Not Reported',
             'long_name' => 'Not Stated',
             'public_id' => 5612322,
-            'concept_code' => 'C43234',
+            'concept_code' => ['C43234'],
             'description' => 'Not provided or available.'
         ],
         [
@@ -42,7 +42,7 @@ extension from its original site of growth to another anatomic site.'
             'permissible_value' => 'Unknown',
             'long_name' => 'Unknown',
             'public_id' => 4266671,
-            'concept_code' => 'C17998',
+            'concept_code' => ['C17998'],
             'description' => 'Not known, not observed, not recorded, or refused.'
         ],
         [
@@ -50,7 +50,7 @@ extension from its original site of growth to another anatomic site.'
             'permissible_value' => 'Primary',
             'long_name' => 'Primary tumor',
             'public_id' => 5189150,
-            'concept_code' => 'C8509',
+            'concept_code' => ['C8509'],
             'description' => 'A tumor at the original site of origin.'
         ],
         [
@@ -58,7 +58,7 @@ extension from its original site of growth to another anatomic site.'
             'permissible_value' => 'Regional',
             'long_name' => 'Regional Disease',
             'public_id' => 2971661,
-            'concept_code' => 'C41844',
+            'concept_code' => ['C41844'],
             'description' => 'A disease or condition that extends beyond the site and spreads into 
 adjacent tissues and regional lymph nodes.'
         ]

@@ -28,7 +28,7 @@ enum DiseasePhase implements ArrayAccess
             'permissible_value' => 'Unknown',
             'long_name' => 'Unknown',
             'public_id' => 4266671,
-            'concept_code' => 'C17998',
+            'concept_code' => ['C17998'],
             'description' => 'Not known, not observed, not recorded, or refused.'
         ],
         [
@@ -36,7 +36,7 @@ enum DiseasePhase implements ArrayAccess
             'permissible_value' => 'Not Reported',
             'long_name' => 'Not Stated',
             'public_id' => 5612322,
-            'concept_code' => 'C43234',
+            'concept_code' => ['C43234'],
             'description' => 'Not provided or available.'
         ],
         [
@@ -44,7 +44,7 @@ enum DiseasePhase implements ArrayAccess
             'permissible_value' => 'Post-Mortem',
             'long_name' => 'Postmortem',
             'public_id' => 5236215,
-            'concept_code' => 'C94193',
+            'concept_code' => ['C94193'],
             'description' => 'After death. Often used to describe an autopsy.'
         ],
         [
@@ -52,7 +52,7 @@ enum DiseasePhase implements ArrayAccess
             'permissible_value' => 'Initial Diagnosis',
             'long_name' => 'Initial Diagnosis',
             'public_id' => 8002761,
-            'concept_code' => 'C156813',
+            'concept_code' => ['C156813'],
             'description' => 'The first diagnosis of the individual\'s condition.'
         ],
         [
@@ -60,7 +60,7 @@ enum DiseasePhase implements ArrayAccess
             'permissible_value' => 'Progression',
             'long_name' => 'Disease Progression',
             'public_id' => 2816916,
-            'concept_code' => 'C17747',
+            'concept_code' => ['C17747'],
             'description' => 'The worsening of a disease over time'
         ],
         [
@@ -68,7 +68,7 @@ enum DiseasePhase implements ArrayAccess
             'permissible_value' => 'Refactory',
             'long_name' => 'Refractory',
             'public_id' => 2566882,
-            'concept_code' => 'C38014',
+            'concept_code' => ['C38014'],
             'description' => 'Not responding to treatment.'
         ],
         [
@@ -76,7 +76,7 @@ enum DiseasePhase implements ArrayAccess
             'permissible_value' => 'Relapse',
             'long_name' => 'Recurrent Disease',
             'public_id' => 3828963,
-            'concept_code' => 'C38155',
+            'concept_code' => ['C38155'],
             'description' => 'The return of a disease after a period of remission.'
         ],
         [
@@ -84,7 +84,7 @@ enum DiseasePhase implements ArrayAccess
             'permissible_value' => 'Relapse/Progression',
             'long_name' => 'Disease Relapse/Progression',
             'public_id' => 12217248,
-            'concept_code' => 'C174991',
+            'concept_code' => ['C174991'],
             'description' => 'Either the return of the disease or the progression of the disease.'
         ]
     ];

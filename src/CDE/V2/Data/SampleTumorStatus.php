@@ -24,7 +24,7 @@ enum SampleTumorStatus implements ArrayAccess
             'permissible_value' => 'Abnormal',
             'long_name' => 'Abnormal',
             'public_id' => 4265117,
-            'concept_code' => 'C25401',
+            'concept_code' => ['C25401'],
             'description' => 'Deviating in any way from the state, position, structure, condition, 
 behavior, or rule which is considered a norm.'
         ],
@@ -33,7 +33,7 @@ behavior, or rule which is considered a norm.'
             'permissible_value' => 'Normal',
             'long_name' => 'Normal',
             'public_id' => 4494160,
-            'concept_code' => 'C14165',
+            'concept_code' => ['C14165'],
             'description' => 'Being approximately average or within certain limits; conforming with or 
 constituting a norm or standard or level or type or social norm.'
         ],
@@ -42,7 +42,7 @@ constituting a norm or standard or level or type or social norm.'
             'permissible_value' => 'Peritumoral',
             'long_name' => 'Peritumoral',
             'public_id' => 4633527,
-            'concept_code' => 'C119010',
+            'concept_code' => ['C119010'],
             'description' => 'Located in tissues surrounding a tumor.'
         ],
         [
@@ -50,7 +50,7 @@ constituting a norm or standard or level or type or social norm.'
             'permissible_value' => 'Tumor',
             'long_name' => 'Malignant Neoplasm',
             'public_id' => 2749852,
-            'concept_code' => 'C9305',
+            'concept_code' => ['C9305'],
             'description' => 'A tumor composed of atypical neoplastic, often pleomorphic cells that 
 invade other tissues. Malignant neoplasms usually metastasize to distant 
 anatomic sites and may recur after excision. The most common malignant 

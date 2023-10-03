@@ -25,7 +25,7 @@ enum VitalStatus implements ArrayAccess
             'permissible_value' => 'Not reported',
             'long_name' => 'Not Reported',
             'public_id' => 2572231,
-            'concept_code' => 'C43234',
+            'concept_code' => ['C43234'],
             'description' => 'Not provided or available.'
         ],
         [
@@ -33,7 +33,7 @@ enum VitalStatus implements ArrayAccess
             'permissible_value' => 'Unknown',
             'long_name' => 'Unknown',
             'public_id' => 2575365,
-            'concept_code' => 'C17998',
+            'concept_code' => ['C17998'],
             'description' => 'Not known, not observed, not recorded, or refused.'
         ],
         [
@@ -41,7 +41,7 @@ enum VitalStatus implements ArrayAccess
             'permissible_value' => 'Alive',
             'long_name' => 'Alive',
             'public_id' => 2580948,
-            'concept_code' => 'C37987',
+            'concept_code' => ['C37987'],
             'description' => 'Showing characteristics of life; displaying signs of life.'
         ],
         [
@@ -49,7 +49,7 @@ enum VitalStatus implements ArrayAccess
             'permissible_value' => 'Dead',
             'long_name' => 'Death',
             'public_id' => 2847328,
-            'concept_code' => 'C28554',
+            'concept_code' => ['C28554'],
             'description' => 'The absence of life or state of being dead.'
         ],
         [
@@ -57,7 +57,7 @@ enum VitalStatus implements ArrayAccess
             'permissible_value' => 'Unspecified',
             'long_name' => 'Unspecified',
             'public_id' => 2573360,
-            'concept_code' => 'C38046',
+            'concept_code' => ['C38046'],
             'description' => 'Not stated explicitly or in detail.'
         ]
     ];
