@@ -41,12 +41,26 @@ class RaceTransformerTest extends TestCase
         $this->assertTrue(Race::validate(RaceTransformer::transform('White', 'permissible_value')));
     }
 
-    public function testBlackInput()
+    public function testBlackAfricanInput()
     {
         $this->assertTrue(Race::validate('Black or African American'));
         $this->assertTrue(Race::validate(RaceTransformer::transform('black or african american', 'permissible_value')));
         $this->assertTrue(Race::validate(RaceTransformer::transform('BLACK OR AFRICAN AMERICAN', 'permissible_value')));
         $this->assertTrue(Race::validate(RaceTransformer::transform('Black or African American', 'permissible_value')));
+    }
+
+    public function testBlackInput()
+    {
+        $this->assertTrue(Race::validate(RaceTransformer::transform('black', 'permissible_value')));
+        $this->assertTrue(Race::validate(RaceTransformer::transform('BLACK', 'permissible_value')));
+        $this->assertTrue(Race::validate(RaceTransformer::transform('Black', 'permissible_value')));
+    }
+
+    public function testAfricanAmericanInput()
+    {
+        $this->assertTrue(Race::validate(RaceTransformer::transform('african american', 'permissible_value')));
+        $this->assertTrue(Race::validate(RaceTransformer::transform('AFRICAN AMERICAN', 'permissible_value')));
+        $this->assertTrue(Race::validate(RaceTransformer::transform('African American', 'permissible_value')));
     }
 
     public function testAsianInput()
@@ -65,13 +79,47 @@ class RaceTransformerTest extends TestCase
         $this->assertTrue(Race::validate(RaceTransformer::transform('Native Hawaiian or other Pacific Islander', 'permissible_value')));
     }
 
+    public function testOtherPacificIslanderInput()
+    {
+        $this->assertTrue(Race::validate(RaceTransformer::transform('other pacific islander', 'permissible_value')));
+        $this->assertTrue(Race::validate(RaceTransformer::transform('OTHER PACIFIC ISLANDER', 'permissible_value')));
+        $this->assertTrue(Race::validate(RaceTransformer::transform('other Pacific Islander', 'permissible_value')));
+    }
+
+    public function testPacificIslanderInput()
+    {
+        $this->assertTrue(Race::validate(RaceTransformer::transform('pacific islander', 'permissible_value')));
+        $this->assertTrue(Race::validate(RaceTransformer::transform('PACIFIC ISLANDER', 'permissible_value')));
+        $this->assertTrue(Race::validate(RaceTransformer::transform('Pacific Islander', 'permissible_value')));
+    }
+
+    public function testNativeHawaiianInput()
+    {
+        $this->assertTrue(Race::validate(RaceTransformer::transform('native hawaiian', 'permissible_value')));
+        $this->assertTrue(Race::validate(RaceTransformer::transform('NATIVE HAWAIIAN', 'permissible_value')));
+        $this->assertTrue(Race::validate(RaceTransformer::transform('Native Hawaiian', 'permissible_value')));
+    }
+
     public function testAmericanIndianAlaskaNativeInput()
     {
         $this->assertTrue(Race::validate('American Indian or Alaska Native'));
         $this->assertTrue(Race::validate(RaceTransformer::transform('american indian or alaska native', 'permissible_value')));
         $this->assertTrue(Race::validate(RaceTransformer::transform('AMERICAN INDIAN OR ALASKA NATIVE', 'permissible_value')));
         $this->assertTrue(Race::validate(RaceTransformer::transform('American Indian or Alaska Native', 'permissible_value')));
+    }
 
+    public function testAmericanIndianInput()
+    {
+        $this->assertTrue(Race::validate(RaceTransformer::transform('american indian', 'permissible_value')));
+        $this->assertTrue(Race::validate(RaceTransformer::transform('AMERICAN INDIAN', 'permissible_value')));
+        $this->assertTrue(Race::validate(RaceTransformer::transform('American Indian', 'permissible_value')));
+    }
+
+    public function testAlaskaNativeInput()
+    {
+        $this->assertTrue(Race::validate(RaceTransformer::transform('alaska native', 'permissible_value')));
+        $this->assertTrue(Race::validate(RaceTransformer::transform('ALASKA NATIVE', 'permissible_value')));
+        $this->assertTrue(Race::validate(RaceTransformer::transform('Alaska Native', 'permissible_value')));
     }
 }
 
