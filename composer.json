@@ -1,6 +1,6 @@
 {
     "name": "stjude/cde-transformers",
-    "description": "A selection of PHP classes for transforming subject, file, diagnosis and sample values into the correct CDE values.",
+    "description": "A selection of PHP classes for transforming subject, file, diagnosis and sample values into the correct common data element (CDE) values.",
     "type": "library",
     "license": "MIT",
     "authors": [
