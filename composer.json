@@ -1,5 +1,5 @@
 {
-    "name": "cde/transformers",
+    "name": "stjude/cde-transformers",
     "description": "A selection of PHP classes for transforming subject, file, diagnosis and sample values into the correct CDE values.",
     "type": "library",
     "license": "MIT",

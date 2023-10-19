@@ -4,14 +4,11 @@ namespace CCDI\Transformer\V0;
 
 class AbstractTransformer
 {
-    public static function transform($permissibleValue, $key = null)
+    public static function transform($value, $key = null)
     {
-        foreach (static::getMappings() as $item) {
-            if (preg_match($item['regex'], $permissibleValue)) {
-                if($key) {
-                    return $item['value'][$key] ?? null;
-                }
-                return $item['value'];
+        foreach (static::getMappings() as $mapping) {
+            if (preg_match($mapping['regex'], $value)) {
+                return $key ? ($mapping['value'][$key] ?? null) : $mapping['value'];
             }
         }
 
@@ -20,10 +17,7 @@ class AbstractTransformer
 
     public static function getMappings(): array
     {
-        if (static::$MAPPINGS) {
-            return static::$MAPPINGS;
-        }
-
-        return [];
+        return static::$MAPPINGS ?? [];
     }
 }
+
