@@ -24,7 +24,7 @@ class SexTransformer extends AbstractTransformer
         ],
         [
             'value' => Sex::INTERSEX,
-            'regex' => '/^(intersex)$/i'
+            'regex' => '/^(intersex|undifferentiated)$/i'
         ]
     ];
 }
