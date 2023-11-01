@@ -39,9 +39,9 @@ trait ValidatorTrait
      * All Data classes (src/CDE/Vx/Data/) implement ArrayAccess, this enables array access against the Object's DATA
      * const directly, without the need to use DATA.
      *
-     * E.g. this is possible to directly access the long_name for FEMALE from Data Gender::FEMALE['long_name']
+     * E.g. this is possible to directly access the long_name for FEMALE from Data Sex::FEMALE['long_name']
      *
-     * The alternative would be need to use Gender::Data and iterate over the elements to find Gender::FEMALE
+     * The alternative would be need to use Sex::Data and iterate over the elements to find Sex::FEMALE
      *
      * @param $offset
      * @return mixed

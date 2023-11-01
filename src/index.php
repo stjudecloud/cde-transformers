@@ -1,9 +1,9 @@
 <?php
 
-use CCDI\CDE\V1\Data\Gender;
+use CCDI\CDE\V1\Data\Sex;
 use CCDI\CDE\V1\Data\Race;
-use CCDI\Demo\AcmeHospital\AcmeGenderTransformer;
-use CCDI\Transformer\V0\GenderTransformer;
+use CCDI\Demo\AcmeHospital\AcmeSexTransformer;
+use CCDI\Transformer\V0\SexTransformer;
 use CCDI\Transformer\V0\RaceTransformer;
 
 require_once 'vendor/autoload.php';
@@ -22,36 +22,36 @@ if (Race::validate(RaceTransformer::transform('Black', 'permissible_value'))) {
     echo "Invalid\n";
 }
 
-// Check 'Female' against the default Gender CDE Class
-if (Gender::validate('Female')) {
+// Check 'Female' against the default Sex CDE Class
+if (Sex::validate('Female')) {
     echo "Valid\n";
 } else {
     echo "Invalid\n";
 }
 
-// Check array access to 'concept_code' for 'Female' from the default Gender CDE Class
-if ('C46110' == Gender::FEMALE['concept_code'][0]) {
+// Check array access to 'concept_code' for 'Female' from the default Sex CDE Class
+if ('C46110' == Sex::FEMALE['concept_code'][0]) {
     echo "Valid\n";
 } else {
     echo "Invalid\n";
 }
 
-// Check array access to 'permissible_value' for 'Female' from the default GenderTransformer
-if ('Female' == GenderTransformer::transform('FEMALE')['permissible_value']) {
+// Check array access to 'permissible_value' for 'Female' from the default SexTransformer
+if ('Female' == SexTransformer::transform('FEMALE')['permissible_value']) {
     echo "Valid\n";
 } else {
     echo "Invalid\n";
 }
 
-// Check array access to 'permissible_value' for 'f' from the default GenderTransformer
-if ('Female' == GenderTransformer::transform('f')['permissible_value']) {
+// Check array access to 'permissible_value' for 'f' from the default SexTransformer
+if ('Female' == SexTransformer::transform('f')['permissible_value']) {
     echo "Valid\n";
 } else {
     echo "Invalid\n";
 }
 
-// Check access via passed key when transforming 'Boy' to 'Male' on the custom AcmeGenderTransformer
-if ('Male' == AcmeGenderTransformer::transform('Boy', 'permissible_value')) {
+// Check access via passed key when transforming 'Boy' to 'Male' on the custom AcmeSexTransformer
+if ('Male' == AcmeSexTransformer::transform('Boy', 'permissible_value')) {
     echo "Valid\n";
 } else {
     echo "Invalid\n";

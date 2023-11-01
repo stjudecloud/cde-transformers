@@ -5,7 +5,7 @@ namespace CCDI\CDE\V1\Data;
 use ArrayAccess;
 use CCDI\CDE\Validator\ValidatorTrait;
 
-enum Gender implements ArrayAccess
+enum Sex implements ArrayAccess
 {
     /**
      * Use a Trait, PHP enums cannot extend classes, a Trait is the next best approach and allows for a single

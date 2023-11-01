@@ -2,27 +2,27 @@
 
 namespace CCDI\Demo\AcmeHospital;
 
-use CCDI\CDE\V1\Data\Gender;
-use CCDI\Transformer\V0\GenderTransformer;
+use CCDI\CDE\V1\Data\Sex;
+use CCDI\Transformer\V0\SexTransformer;
 
 /**
- * @method static Gender transform($permissibleValue, $key = null)
+ * @method static Sex transform($permissibleValue, $key = null)
  */
-class AcmeGenderTransformer extends GenderTransformer
+class AcmeSexTransformer extends SexTransformer
 {
     public static function getMappings(): array
     {
-        $mappings = GenderTransformer::$MAPPINGS;
+        $mappings = SexTransformer::$MAPPINGS;
 
         $mappings[] =
             [
-                'value' => Gender::MALE,
+                'value' => Sex::MALE,
                 'regex' => '/^(boy)$/i'
             ];
 
         $mappings[] =
             [
-                'value' => Gender::FEMALE,
+                'value' => Sex::FEMALE,
                 'regex' => '/^(girl)$/i'
             ];
 

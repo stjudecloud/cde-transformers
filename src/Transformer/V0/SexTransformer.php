@@ -2,28 +2,28 @@
 
 namespace CCDI\Transformer\V0;
 
-use CCDI\CDE\V1\Data\Gender;
+use CCDI\CDE\V1\Data\Sex;
 
 /**
- * @method static Gender|string transform($permissibleValue, $key = null)
+ * @method static Sex|string transform($permissibleValue, $key = null)
  */
-class GenderTransformer extends AbstractTransformer
+class SexTransformer extends AbstractTransformer
 {
     protected static array $MAPPINGS = [
         [
-            'value' => Gender::UNKNOWN,
+            'value' => Sex::UNKNOWN,
             'regex' => '/^(unknown)$/i'
         ],
         [
-            'value' => Gender::FEMALE,
+            'value' => Sex::FEMALE,
             'regex' => '/^(f|female)$/i'
         ],
         [
-            'value' => Gender::MALE,
+            'value' => Sex::MALE,
             'regex' => '/^(m|male)$/i'
         ],
         [
-            'value' => Gender::INTERSEX,
+            'value' => Sex::INTERSEX,
             'regex' => '/^(intersex)$/i'
         ]
     ];
