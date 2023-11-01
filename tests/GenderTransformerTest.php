@@ -8,7 +8,7 @@ class GenderTransformerTest extends TestCase
 {
     public function testMaleInput()
     {
-        $this->assertTrue(Gender::validate('Male'));
+        $this->assertTrue(Gender::validate('M'));
         $this->assertTrue(Gender::validate(GenderTransformer::transform('MALE', 'permissible_value')));
         $this->assertTrue(Gender::validate(GenderTransformer::transform('male', 'permissible_value')));
         $this->assertTrue(Gender::validate(GenderTransformer::transform('m', 'permissible_value')));
@@ -17,7 +17,7 @@ class GenderTransformerTest extends TestCase
 
     public function testFemaleInput()
     {
-        $this->assertTrue(Gender::validate('Female'));
+        $this->assertTrue(Gender::validate('F'));
         $this->assertTrue(Gender::validate(GenderTransformer::transform('FEMALE', 'permissible_value')));
         $this->assertTrue(Gender::validate(GenderTransformer::transform('female', 'permissible_value')));
         $this->assertTrue(Gender::validate(GenderTransformer::transform('f', 'permissible_value')));

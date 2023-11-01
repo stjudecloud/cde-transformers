@@ -15,14 +15,6 @@ class GenderTransformer extends AbstractTransformer
             'regex' => '/^(unknown)$/i'
         ],
         [
-            'value' => Gender::NOT_REPORTED,
-            'regex' => '/^(not reported)$/i'
-        ],
-        [
-            'value' => Gender::UNSPECIFIED,
-            'regex' => '/^(unspecified)$/i'
-        ],
-        [
             'value' => Gender::FEMALE,
             'regex' => '/^(f|female)$/i'
         ],

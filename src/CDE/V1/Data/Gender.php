@@ -18,8 +18,6 @@ enum Gender implements ArrayAccess
      * Therefore, the const DATA is an array of values mapped to the
      */
     case UNKNOWN;
-    case NOT_REPORTED;
-    case UNSPECIFIED;
     case INTERSEX;
     case FEMALE;
     case MALE;
@@ -34,31 +32,15 @@ enum Gender implements ArrayAccess
     private const DATA = [
         [
             'value' => self::UNKNOWN,
-            'permissible_value' => 'Unknown',
+            'permissible_value' => 'U',
             'long_name' => 'Unknown',
-            'public_id' => 2575365,
+            'public_id' => 5682944,
             'concept_code' => ['C17998'],
             'description' => 'Not known, not observed, not recorded, or refused.'
         ],
         [
-            'value' => self::NOT_REPORTED,
-            'permissible_value' => 'Not Reported',
-            'long_name' => 'Not Reported',
-            'public_id' => 2572231,
-            'concept_code' => ['C43234'],
-            'description' => 'Not provided or available.'
-        ],
-        [
-            'value' => self::UNSPECIFIED,
-            'permissible_value' => 'Unspecified',
-            'long_name' => 'Unspecified',
-            'public_id' => 2573360,
-            'concept_code' => ['C38046'],
-            'description' => 'Not stated explicitly or in detail.'
-        ],
-        [
             'value' => self::INTERSEX,
-            'permissible_value' => 'Intersex',
+            'permissible_value' => 'UNDIFFERENTIATED',
             'long_name' => 'Intersex',
             'public_id' => 2575558,
             'concept_code' => ['C45908'],
@@ -66,19 +48,19 @@ enum Gender implements ArrayAccess
         ],
         [
             'value' => self::FEMALE,
-            'permissible_value' => 'Female',
+            'permissible_value' => 'F',
             'long_name' => 'Female',
-            'public_id' => 2575551,
-            'concept_code' => ['C46110'],
-            'description' => 'An individual who reports belonging to the cultural gender role distinction of male.'
+            'public_id' => 2567172,
+            'concept_code' => ['C16576'],
+            'description' => 'A person who belongs to the sex that normally produces ova. The term is used to indicate biological sex distinctions, or cultural gender role distinctions, or both.'
         ],
         [
             'value' => self::MALE,
-            'permissible_value' => 'Male',
+            'permissible_value' => 'M',
             'long_name' => 'Male',
-            'public_id' => 2575550,
-            'concept_code' => ['C46109'],
-            'description' => 'An individual who reports belonging to the cultural gender role distinction of female.'
+            'public_id' => 2567171,
+            'concept_code' => ['C20197'],
+            'description' => 'A person who belongs to the sex that normally produces sperm. The term is used to indicate biological sex distinctions, cultural gender role distinctions, or both.'
         ],
     ];
 }
