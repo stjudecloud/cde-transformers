@@ -11,6 +11,10 @@ class SampleTumorStatusTransformer extends AbstractTransformer
 {
     protected static array $MAPPINGS = [
         [
+            'value' => SampleTumorStatus::NOT_REPORTED,
+            'regex' => '/^(not reported)$/i'
+        ],
+        [
             'value' => SampleTumorStatus::ABNORMAL,
             'regex' => '/^(abnormal)$/i'
         ],
@@ -25,6 +29,22 @@ class SampleTumorStatusTransformer extends AbstractTransformer
         [
             'value' => SampleTumorStatus::TUMOR,
             'regex' => '/^(tumor|tumour)$/i'
+        ],
+        [
+            'value' => SampleTumorStatus::NON_NEOPLASTIC,
+            'regex' => '/^(non(-| )neoplastic)$/i'
+        ],
+        [
+            'value' => SampleTumorStatus::UNAVAILABLE,
+            'regex' => '/^(unavailable)$/i'
+        ],
+        [
+            'value' => SampleTumorStatus::UNKNOWN,
+            'regex' => '/^(unknown)$/i'
+        ],
+        [
+            'value' => SampleTumorStatus::UNSPECIFIED,
+            'regex' => '/^(unspecified)$/i'
         ]
     ];
 }
