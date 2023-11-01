@@ -9,16 +9,29 @@ enum SampleTumorStatus implements ArrayAccess
 {
     use ValidatorTrait;
 
+    case NOT_REPORTED;
     case ABNORMAL;
     case NORMAL;
     case PERITUMORAL;
     case TUMOR;
+    case NON_NEOPLASTIC;
+    case UNAVAILABLE;
+    case UNKNOWN;
+    case UNSPECIFIED;
 
     const CDE_ID = 5432687;
     const URL = 'https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=5432687%20and%20ver_nr=2.0';
     const DESCRIPTION = 'Text term that represents a description of the kind of tissue collected with respect to disease status or proximity to tumor tissue.';
 
     private const DATA = [
+        [
+            'value' => self::NOT_REPORTED,
+            'permissible_value' => 'Not Reported',
+            'long_name' => 'Not Reported',
+            'public_id' => 5612322,
+            'concept_code' => ['C43234'],
+            'description' => 'Not provided or available.'
+        ],
         [
             'value' => self::ABNORMAL,
             'permissible_value' => 'Abnormal',
@@ -57,6 +70,38 @@ anatomic sites and may recur after excision. The most common malignant
 neoplasms are carcinomas (adenocarcinomas or squamous cell carcinomas), 
 Hodgkin\'s and non-Hodgkin\'s lymphomas, leukemias, melanomas, and sarcomas. 
 -- 2004'
+        ],
+        [
+            'value' => self::NON_NEOPLASTIC,
+            'permissible_value' => 'Non-neoplastic',
+            'long_name' => 'Non-neoplastic',
+            'public_id' => 5828001,
+            'concept_code' => ['C25594', 'C45315'],
+            'description' => 'An operation in which a term denies or inverts the meaning of another term or construction.: Exhibiting characteristics of independently proliferating cells, notably altered morphology, growth characteristics, and/or biochemical and molecular properties.'
+        ],
+        [
+            'value' => self::UNAVAILABLE,
+            'permissible_value' => 'Unavailable',
+            'long_name' => 'Unavailable',
+            'public_id' => 5828000,
+            'concept_code' => ['C126101'],
+            'description' => 'The desired information is not available.'
+        ],
+        [
+            'value' => self::UNKNOWN,
+            'permissible_value' => 'Unknown',
+            'long_name' => 'Unknown',
+            'public_id' => 2572577,
+            'concept_code' => ['C17998'],
+            'description' => 'Not known, not observed, not recorded, or refused.'
+        ],
+        [
+            'value' => self::UNSPECIFIED,
+            'permissible_value' => 'Unspecified',
+            'long_name' => 'Unspecified',
+            'public_id' => 2573360,
+            'concept_code' => ['C38046'],
+            'description' => 'Not stated explicitly or in detail.'
         ]
     ];
 }
