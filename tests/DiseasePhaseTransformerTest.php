@@ -30,12 +30,12 @@ class DiseasePhaseTransformerTest extends TestCase
         $this->assertTrue(DiseasePhase::validate(DiseasePhaseTransformer::transform('Progression', 'permissible_value')));
     }
 
-    public function testRefactoryInput()
+    public function testRefractoryInput()
     {
-        $this->assertTrue(DiseasePhase::validate('Refactory'));
-        $this->assertTrue(DiseasePhase::validate(DiseasePhaseTransformer::transform('refactory', 'permissible_value')));
-        $this->assertTrue(DiseasePhase::validate(DiseasePhaseTransformer::transform('REFACTORY', 'permissible_value')));
-        $this->assertTrue(DiseasePhase::validate(DiseasePhaseTransformer::transform('Refactory', 'permissible_value')));
+        $this->assertTrue(DiseasePhase::validate('Refractory'));
+        $this->assertTrue(DiseasePhase::validate(DiseasePhaseTransformer::transform('refractory', 'permissible_value')));
+        $this->assertTrue(DiseasePhase::validate(DiseasePhaseTransformer::transform('REFRACTORY', 'permissible_value')));
+        $this->assertTrue(DiseasePhase::validate(DiseasePhaseTransformer::transform('Refractory', 'permissible_value')));
     }
 
     public function testRelapseInput()

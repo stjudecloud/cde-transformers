@@ -14,7 +14,7 @@ enum DiseasePhase implements ArrayAccess
     case POST_MORTEM;
     case INITIAL_DIAGNOSIS;
     case PROGRESSION;
-    case REFACTORY;
+    case REFRACTORY;
     case RELAPSE;
     case RELAPSE_PROGRESSION;
 
@@ -64,8 +64,8 @@ enum DiseasePhase implements ArrayAccess
             'description' => 'The worsening of a disease over time'
         ],
         [
-            'value' => self::REFACTORY,
-            'permissible_value' => 'Refactory',
+            'value' => self::REFRACTORY,
+            'permissible_value' => 'Refractory',
             'long_name' => 'Refractory',
             'public_id' => 2566882,
             'concept_code' => ['C38014'],

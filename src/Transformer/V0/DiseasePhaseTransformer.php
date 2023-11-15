@@ -31,8 +31,8 @@ class DiseasePhaseTransformer extends AbstractTransformer
             'regex' => '/^(progression)$/i'
         ],
         [
-            'value' => DiseasePhase::REFACTORY,
-            'regex' => '/^(refactory)$/i'
+            'value' => DiseasePhase::REFRACTORY,
+            'regex' => '/^(refactory|refractory)$/i'
         ],
         [
             'value' => DiseasePhase::RELAPSE,
