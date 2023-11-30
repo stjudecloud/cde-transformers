@@ -1,36 +1,36 @@
 <?php
 
-use CCDI\CDE\V1\Data\Sex;
-use CCDI\Transformer\V0\SexTransformer;
+use CCDI\CDE\V1\Data\SexAtBirth;
+use CCDI\Transformer\V0\SexAtBirthTransformer;
 use PHPUnit\Framework\TestCase;
 
-class SexTransformerTest extends TestCase
+class SexAtBirthTransformerTest extends TestCase
 {
     public function testMaleInput()
     {
-        $this->assertTrue(Sex::validate('M'));
-        $this->assertTrue(Sex::validate(SexTransformer::transform('MALE', 'permissible_value')));
-        $this->assertTrue(Sex::validate(SexTransformer::transform('male', 'permissible_value')));
-        $this->assertTrue(Sex::validate(SexTransformer::transform('m', 'permissible_value')));
-        $this->assertTrue(Sex::validate(SexTransformer::transform('M', 'permissible_value')));
+        $this->assertTrue(SexAtBirth::validate('M'));
+        $this->assertTrue(SexAtBirth::validate(SexAtBirthTransformer::transform('MALE', 'permissible_value')));
+        $this->assertTrue(SexAtBirth::validate(SexAtBirthTransformer::transform('male', 'permissible_value')));
+        $this->assertTrue(SexAtBirth::validate(SexAtBirthTransformer::transform('m', 'permissible_value')));
+        $this->assertTrue(SexAtBirth::validate(SexAtBirthTransformer::transform('M', 'permissible_value')));
     }
 
     public function testFemaleInput()
     {
-        $this->assertTrue(Sex::validate('F'));
-        $this->assertTrue(Sex::validate(SexTransformer::transform('FEMALE', 'permissible_value')));
-        $this->assertTrue(Sex::validate(SexTransformer::transform('female', 'permissible_value')));
-        $this->assertTrue(Sex::validate(SexTransformer::transform('f', 'permissible_value')));
-        $this->assertTrue(Sex::validate(SexTransformer::transform('F', 'permissible_value')));
+        $this->assertTrue(SexAtBirth::validate('F'));
+        $this->assertTrue(SexAtBirth::validate(SexAtBirthTransformer::transform('FEMALE', 'permissible_value')));
+        $this->assertTrue(SexAtBirth::validate(SexAtBirthTransformer::transform('female', 'permissible_value')));
+        $this->assertTrue(SexAtBirth::validate(SexAtBirthTransformer::transform('f', 'permissible_value')));
+        $this->assertTrue(SexAtBirth::validate(SexAtBirthTransformer::transform('F', 'permissible_value')));
     }
 
     public function testUnknownInput()
     {
-        $this->assertFalse(Sex::validate('Dog'));
-        $this->assertFalse(Sex::validate(SexTransformer::transform('Cat')));
-        $this->assertFalse(Sex::validate(SexTransformer::transform('Hill')));
-        $this->assertFalse(Sex::validate(SexTransformer::transform('x')));
-        $this->assertFalse(Sex::validate(SexTransformer::transform('X')));
+        $this->assertFalse(SexAtBirth::validate('Dog'));
+        $this->assertFalse(SexAtBirth::validate(SexAtBirthTransformer::transform('Cat')));
+        $this->assertFalse(SexAtBirth::validate(SexAtBirthTransformer::transform('Hill')));
+        $this->assertFalse(SexAtBirth::validate(SexAtBirthTransformer::transform('x')));
+        $this->assertFalse(SexAtBirth::validate(SexAtBirthTransformer::transform('X')));
     }
 }
 
