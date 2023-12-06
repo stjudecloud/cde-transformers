@@ -31,11 +31,11 @@ class SexAtBirthTransformer extends AbstractTransformer
             'regex' => '/^(x)$/i'
         ],
         [
-            'value' => SexAtBirth::DOES_NOT_KNOW,
+            'value' => SexAtBirth::DONT_KNOW,
             'regex' => '/^(does not know|doesn\'t know)$/i'
         ],
         [
-            'value' => SexAtBirth::RESPONSE_DECLINED,
+            'value' => SexAtBirth::DECLINE_TO_ANSWER,
             'regex' => '/^(response declined|decline to answer|declined to answer)$/i'
         ],
         [
