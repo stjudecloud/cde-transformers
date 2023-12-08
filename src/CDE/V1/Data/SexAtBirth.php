@@ -68,7 +68,7 @@ enum SexAtBirth implements ArrayAccess
         ],
         [
             'value' => self::MALE,
-            'permissible_value' => 'M',
+            'permissible_value' => 'Male',
             'long_name' => 'Male',
             'public_id' => 2567171,
             'concept_code' => ['C20197'],
