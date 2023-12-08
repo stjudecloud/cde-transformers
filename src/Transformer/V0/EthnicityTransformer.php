@@ -5,7 +5,7 @@ namespace CCDI\Transformer\V0;
 use CCDI\CDE\V2\Data\Ethnicity;
 
 /**
- * @method static Ethnicity|string transform($permissibleValue, $key = null)
+ * @method static string|null|Ethnicity transform($permissibleValue, $key = null)
  */
 class EthnicityTransformer extends AbstractTransformer
 {

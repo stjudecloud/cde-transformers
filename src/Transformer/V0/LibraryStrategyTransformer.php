@@ -5,7 +5,7 @@ namespace CCDI\Transformer\V0;
 use CCDI\CDE\V1\Data\LibraryStrategy;
 
 /**
- * @method static LibraryStrategy|string transform($permissibleValue, $key = null)
+ * @method static string|null|LibraryStrategy transform($permissibleValue, $key = null)
  */
 class LibraryStrategyTransformer extends AbstractTransformer
 {

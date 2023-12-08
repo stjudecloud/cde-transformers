@@ -5,7 +5,7 @@ namespace CCDI\Transformer\V0;
 use CCDI\CDE\V1\Data\Race;
 
 /**
- * @method static Race|string transform($permissibleValue, $key = null)
+ * @method static string|null|Race transform($permissibleValue, $key = null)
  */
 class RaceTransformer extends AbstractTransformer
 {

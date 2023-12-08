@@ -5,7 +5,7 @@ namespace CCDI\Transformer\V0;
 use CCDI\CDE\V1\Data\LibrarySelection;
 
 /**
- * @method static LibrarySelection|string transform($permissibleValue, $key = null)
+ * @method static string|null|LibrarySelection transform($permissibleValue, $key = null)
  */
 class LibrarySelectionTransformer extends AbstractTransformer
 {

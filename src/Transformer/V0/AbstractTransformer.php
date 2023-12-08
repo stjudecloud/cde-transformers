@@ -4,7 +4,7 @@ namespace CCDI\Transformer\V0;
 
 class AbstractTransformer
 {
-    public static function transform($value, $key = null)
+    public static function transform($value, $key = null): ?string
     {
         foreach (static::getMappings() as $mapping) {
             if (preg_match($mapping['regex'], $value)) {

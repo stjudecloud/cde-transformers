@@ -5,7 +5,7 @@ namespace CCDI\Transformer\V0;
 use CCDI\CDE\V1\Data\SexAtBirth;
 
 /**
- * @method static Sex|string transform($permissibleValue, $key = null)
+ * @method static string|null|Sex transform($permissibleValue, $key = null)
  */
 class SexAtBirthTransformer extends AbstractTransformer
 {
