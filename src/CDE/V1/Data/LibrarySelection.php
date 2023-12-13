@@ -51,6 +51,7 @@ enum LibrarySelection implements ArrayAccess
     const CDE_ID = 6347743;
     const URL = 'https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=6347743%20and%20ver_nr=1.0';
     const DESCRIPTION = 'The type of systematic actions performed to select or enrich DNA fragments used in analysis by high-throughput sequencing.';
+    const CDE_VERSION = 1;
 
     private const DATA = [
         [

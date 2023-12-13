@@ -18,6 +18,7 @@ enum VitalStatus implements ArrayAccess
     const CDE_ID = 2847330;
     const URL = 'https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=2847330%20and%20ver_nr=1.0';
     const DESCRIPTION = 'The response to a question that describes a participant\'s survival status.';
+    const CDE_VERSION = 1;
 
     private const DATA = [
         [

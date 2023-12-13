@@ -21,6 +21,7 @@ enum DiseasePhase implements ArrayAccess
     const CDE_ID = 12217251;
     const URL = 'https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=12217251%20and%20ver_nr=1.0';
     const DESCRIPTION = 'The stage or period of an individual\'s treatment process during which relevant observations were recorded.';
+    const CDE_VERSION = 1;
 
     private const DATA = [
         [

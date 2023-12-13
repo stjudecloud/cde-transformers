@@ -22,6 +22,7 @@ enum SampleTumorStatus implements ArrayAccess
     const CDE_ID = 5432687;
     const URL = 'https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=5432687%20and%20ver_nr=2.0';
     const DESCRIPTION = 'Text term that represents a description of the kind of tissue collected with respect to disease status or proximity to tumor tissue.';
+    const CDE_VERSION = 2;
 
     private const DATA = [
         [

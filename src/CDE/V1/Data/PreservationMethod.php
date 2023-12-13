@@ -19,6 +19,7 @@ enum PreservationMethod implements ArrayAccess
     const CDE_ID = 5432521;
     const URL = 'https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=5432521%20and%20ver_nr=1.0';
     const DESCRIPTION = 'Text term that represents the method used to preserve the sample.';
+    const CDE_VERSION = 1;
 
     private const DATA = [
         [

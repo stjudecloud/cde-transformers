@@ -29,6 +29,7 @@ enum SexAtBirth implements ArrayAccess
     const CDE_ID = 7572817;
     const URL = 'https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=7572817%20and%20ver_nr=1.0';
     const DESCRIPTION = 'A textual description of a person\'s sex at birth.';
+    const CDE_VERSION = 1;
 
     /**
      * An array containing all data for each enum case, the value should always be mapped to an enum case

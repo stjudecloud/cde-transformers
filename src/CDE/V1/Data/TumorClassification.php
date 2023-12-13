@@ -18,6 +18,7 @@ enum TumorClassification implements ArrayAccess
     const CDE_ID = 12922545;
     const URL = 'https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=12922545%20and%20ver_nr=1.0';
     const DESCRIPTION = 'The classification of a tumor based primarily on histopathological characteristics.';
+    const CDE_VERSION = 1;
 
     private const DATA = [
         [
