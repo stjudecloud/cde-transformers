@@ -8,7 +8,7 @@ use CCDI\Transformer\V0\SexAtBirthTransformer;
 /**
  * @method static Sex transform($permissibleValue, $key = null)
  */
-class AcmeSexSexAtBirthTransformer extends SexAtBirthTransformer
+class AcmeSexAtBirthTransformer extends SexAtBirthTransformer
 {
     public static function getMappings(): array
     {
