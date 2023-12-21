@@ -6,12 +6,14 @@ use PHPUnit\Framework\TestCase;
 
 class PreservationMethodTransformerTest extends TestCase
 {
-    public function testCryopreservedInput()
+    public function testMinus80DegCInput()
     {
-        $this->assertTrue(PreservationMethod::validate('Cryopreserved'));
-        $this->assertTrue(PreservationMethod::validate(PreservationMethodTransformer::transform('cryopreserved', 'permissible_value')));
-        $this->assertTrue(PreservationMethod::validate(PreservationMethodTransformer::transform('CRYOPRESERVED', 'permissible_value')));
-        $this->assertTrue(PreservationMethod::validate(PreservationMethodTransformer::transform('Cryopreserved', 'permissible_value')));
+        $this->assertTrue(PreservationMethod::validate('-80 Deg C'));
+        $this->assertTrue(PreservationMethod::validate(PreservationMethodTransformer::transform('-80 deg c', 'permissible_value')));
+        $this->assertTrue(PreservationMethod::validate(PreservationMethodTransformer::transform('-80 DEG C', 'permissible_value')));
+        $this->assertTrue(PreservationMethod::validate(PreservationMethodTransformer::transform('-80 Deg C', 'permissible_value')));
+        $this->assertTrue(PreservationMethod::validate(PreservationMethodTransformer::transform('-80', 'permissible_value')));
+        $this->assertTrue(PreservationMethod::validate(PreservationMethodTransformer::transform('-80°', 'permissible_value')));
     }
 
     public function testFfpeInput()
@@ -22,14 +24,6 @@ class PreservationMethodTransformerTest extends TestCase
         $this->assertTrue(PreservationMethod::validate(PreservationMethodTransformer::transform('Ffpe', 'permissible_value')));
     }
 
-    public function testFreshInput()
-    {
-        $this->assertTrue(PreservationMethod::validate('Fresh'));
-        $this->assertTrue(PreservationMethod::validate(PreservationMethodTransformer::transform('fresh', 'permissible_value')));
-        $this->assertTrue(PreservationMethod::validate(PreservationMethodTransformer::transform('FRESH', 'permissible_value')));
-        $this->assertTrue(PreservationMethod::validate(PreservationMethodTransformer::transform('Fresh', 'permissible_value')));
-    }
-
     public function testFrozenInput()
     {
         $this->assertTrue(PreservationMethod::validate('Frozen'));
@@ -38,19 +32,11 @@ class PreservationMethodTransformerTest extends TestCase
         $this->assertTrue(PreservationMethod::validate(PreservationMethodTransformer::transform('Frozen', 'permissible_value')));
     }
 
-    public function testOctInput()
+    public function testLNTwoInput()
     {
-        $this->assertTrue(PreservationMethod::validate('OCT'));
-        $this->assertTrue(PreservationMethod::validate(PreservationMethodTransformer::transform('oct', 'permissible_value')));
-        $this->assertTrue(PreservationMethod::validate(PreservationMethodTransformer::transform('OCT', 'permissible_value')));
-        $this->assertTrue(PreservationMethod::validate(PreservationMethodTransformer::transform('Oct', 'permissible_value')));
-    }
-
-    public function testSnapFrozenInput()
-    {
-        $this->assertTrue(PreservationMethod::validate('Snap Frozen'));
-        $this->assertTrue(PreservationMethod::validate(PreservationMethodTransformer::transform('snap frozen', 'permissible_value')));
-        $this->assertTrue(PreservationMethod::validate(PreservationMethodTransformer::transform('SNAP FROZEN', 'permissible_value')));
-        $this->assertTrue(PreservationMethod::validate(PreservationMethodTransformer::transform('Snap Frozen', 'permissible_value')));
+        $this->assertTrue(PreservationMethod::validate('LN2'));
+        $this->assertTrue(PreservationMethod::validate(PreservationMethodTransformer::transform('ln2', 'permissible_value')));
+        $this->assertTrue(PreservationMethod::validate(PreservationMethodTransformer::transform('LN2', 'permissible_value')));
+        $this->assertTrue(PreservationMethod::validate(PreservationMethodTransformer::transform('lN2', 'permissible_value')));
     }
 }
