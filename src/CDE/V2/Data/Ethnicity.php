@@ -16,7 +16,7 @@ enum Ethnicity implements ArrayAccess
     case NOT_REPORTED;
 
     const CDE_ID = 2192217 ;
-    const URL = 'https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=2192217 %20and%20ver_nr=2.0';
+    const URL = 'https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=2192217%20and%20ver_nr=2.0';
     const DESCRIPTION = 'The text for reporting information about ethnicity based on the Office of Management and Budget (OMB) categories.';
     const CDE_VERSION = 2;
 
