@@ -29,8 +29,8 @@ composer require stjude/cde-transformers
 ```php
 <?php   
 require_once __DIR__ . '/vendor/autoload.php';
-use CCDI\Transformer\V0\GenderTransformer;
-$femalePermissibleValue = GenderTransformer::transform('FEMALE')['permissible_value'];
+use CCDI\Transformer\V0\SexTransformer;
+$femalePermissibleValue = SexTransformer::transform('FEMALE')['permissible_value'];
 ?>
 ```
 
@@ -38,7 +38,7 @@ Also see `index.php` for more examples.
 
 ## Custom Tranformers
 
-A demo Customer Transform exists in `src/Demo/AcmeHospital/AcmeGenderTransformer.php`. This can be used as a starting point for creating your own custom transformers.
+A demo Customer Transform exists in `src/Demo/AcmeHospital/AcmeSexTransformer.php`. This can be used as a starting point for creating your own custom transformers.
 
 This demo transformer has been created to transform the values of `boy` to the CDE value for `Male` and `girl` to the CDE value for `Female`.
 
@@ -64,7 +64,7 @@ class AcmeSampleTumorStatusTransformer extends SampleTumorStatusTransformer
 
 ## CDE Versions
 
-Each CDE's permissible value, long name, concept code, description and public_id are harded coded into a Data class, e.g. `src/CDE/V1/Data/Gender.php`. This is to ensure that the permissible values are always up to date with the CDEs.
+Each CDE's permissible value, long name, concept code, description and public_id are harded coded into a Data class, e.g. `src/CDE/V1/Data/Sex.php`. This is to ensure that the permissible values are always up to date with the CDEs.
 
 Once a CDE is released, a new version of the package can be released with the new permissible values.
 
