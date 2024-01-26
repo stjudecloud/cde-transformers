@@ -64,9 +64,9 @@ class AcmeSampleTumorStatusTransformer extends SampleTumorStatusTransformer
 
 ## CDE Versions
 
-Each CDE's permissible value, long name, concept code, description and public_id are harded coded into a Data class, e.g. `src/CDE/V1/Data/Sex.php`. This is to ensure that the permissible values are always up to date with the CDEs.
+Each CDE's permissible values, long name, concept code, CDE version, description CADsr URL, and public_id are harded coded into a Data class, e.g. `src/CDE/V1/Data/Sex.php`. This is to ensure that the permissible values are always up to date with the CDEs.
 
-Once a CDE is released, a new version of the package can be released with the new permissible values.
+Once a CDE is released, a new version of the package can be released with the new permissible values, long names, etc.
 
 Feel free to create a pull request to add new CDEs.
 
