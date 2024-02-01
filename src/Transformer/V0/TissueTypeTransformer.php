@@ -2,48 +2,48 @@
 
 namespace CCDI\Transformer\V0;
 
-use CCDI\CDE\V2\Data\SampleTumorStatus;
+use CCDI\CDE\V2\Data\TissueType;
 
 /**
- * @method static string|null|SampleTumorStatus transform($permissibleValue, $key = null)
+ * @method static string|null|TissueType transform($permissibleValue, $key = null)
  */
-class SampleTumorStatusTransformer extends AbstractTransformer
+class TissueTypeTransformer extends AbstractTransformer
 {
     protected static array $MAPPINGS = [
         [
-            'value' => SampleTumorStatus::NOT_REPORTED,
+            'value' => TissueType::NOT_REPORTED,
             'regex' => '/^(not reported)$/i'
         ],
         [
-            'value' => SampleTumorStatus::ABNORMAL,
+            'value' => TissueType::ABNORMAL,
             'regex' => '/^(abnormal)$/i'
         ],
         [
-            'value' => SampleTumorStatus::NORMAL,
+            'value' => TissueType::NORMAL,
             'regex' => '/^(normal)$/i'
         ],
         [
-            'value' => SampleTumorStatus::PERITUMORAL,
+            'value' => TissueType::PERITUMORAL,
             'regex' => '/^(peritumoral|peritumoural)$/i'
         ],
         [
-            'value' => SampleTumorStatus::TUMOR,
+            'value' => TissueType::TUMOR,
             'regex' => '/^(tumor|tumour)$/i'
         ],
         [
-            'value' => SampleTumorStatus::NON_NEOPLASTIC,
+            'value' => TissueType::NON_NEOPLASTIC,
             'regex' => '/^(non(-| )neoplastic)$/i'
         ],
         [
-            'value' => SampleTumorStatus::UNAVAILABLE,
+            'value' => TissueType::UNAVAILABLE,
             'regex' => '/^(unavailable)$/i'
         ],
         [
-            'value' => SampleTumorStatus::UNKNOWN,
+            'value' => TissueType::UNKNOWN,
             'regex' => '/^(unknown)$/i'
         ],
         [
-            'value' => SampleTumorStatus::UNSPECIFIED,
+            'value' => TissueType::UNSPECIFIED,
             'regex' => '/^(unspecified)$/i'
         ]
     ];
