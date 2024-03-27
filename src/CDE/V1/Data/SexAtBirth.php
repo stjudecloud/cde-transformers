@@ -26,9 +26,13 @@ enum SexAtBirth implements ArrayAccess
     case INTERSEX;
     case NONE_OF_THESE_DESCRIBE_ME;
     case PREFER_NOT_TO_ANSWER;
+
     const CDE_ID = 7572817;
+
     const URL = 'https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=7572817%20and%20ver_nr=1.0';
+
     const DESCRIPTION = 'A textual description of a person\'s sex at birth.';
+
     const CDE_VERSION = 1;
 
     /**
@@ -41,7 +45,7 @@ enum SexAtBirth implements ArrayAccess
             'long_name' => 'Gender Identifier X',
             'public_id' => 14305179,
             'concept_code' => ['C200588'],
-            'description' => 'A gender designation for individuals who identify themselves as not exclusively male nor female, such as non-binary, intersex or gender-non-conforming.'
+            'description' => 'A gender designation for individuals who identify themselves as not exclusively male nor female, such as non-binary, intersex or gender-non-conforming.',
         ],
         [
             'value' => self::DONT_KNOW,
@@ -49,7 +53,7 @@ enum SexAtBirth implements ArrayAccess
             'long_name' => 'Does Not Know',
             'public_id' => 3361449,
             'concept_code' => ['C67142'],
-            'description' => 'The answer is not known by the person answering.'
+            'description' => 'The answer is not known by the person answering.',
         ],
         [
             'value' => self::DECLINE_TO_ANSWER,
@@ -57,7 +61,7 @@ enum SexAtBirth implements ArrayAccess
             'long_name' => 'Response Declined',
             'public_id' => 2577233,
             'concept_code' => ['C51024'],
-            'description' => 'Used to indicate when a respondent makes a decision to not answer a question.'
+            'description' => 'Used to indicate when a respondent makes a decision to not answer a question.',
         ],
         [
             'value' => self::FEMALE,
@@ -65,7 +69,7 @@ enum SexAtBirth implements ArrayAccess
             'long_name' => 'Female',
             'public_id' => 2567172,
             'concept_code' => ['C16576'],
-            'description' => 'A person who belongs to the sex that normally produces ova. The term is used to indicate biological sex distinctions, or cultural gender role distinctions, or both.'
+            'description' => 'A person who belongs to the sex that normally produces ova. The term is used to indicate biological sex distinctions, or cultural gender role distinctions, or both.',
         ],
         [
             'value' => self::MALE,
@@ -73,7 +77,7 @@ enum SexAtBirth implements ArrayAccess
             'long_name' => 'Male',
             'public_id' => 2567171,
             'concept_code' => ['C20197'],
-            'description' => 'A person who belongs to the sex that normally produces sperm. The term is used to indicate biological sex distinctions, cultural gender role distinctions, or both.'
+            'description' => 'A person who belongs to the sex that normally produces sperm. The term is used to indicate biological sex distinctions, cultural gender role distinctions, or both.',
         ],
         [
             'value' => self::UNKNOWN,
@@ -81,7 +85,7 @@ enum SexAtBirth implements ArrayAccess
             'long_name' => 'Unknown',
             'public_id' => 2960664,
             'concept_code' => ['C17998'],
-            'description' => 'Not known, not observed, not recorded, or refused.'
+            'description' => 'Not known, not observed, not recorded, or refused.',
         ],
         [
             'value' => self::INTERSEX,
@@ -89,7 +93,7 @@ enum SexAtBirth implements ArrayAccess
             'long_name' => 'Intersex',
             'public_id' => 2575558,
             'concept_code' => ['C45908'],
-            'description' => 'A person (one of unisexual specimens) who is born with genitalia and/or secondary sexual characteristics of indeterminate sex, or which combine features of both sexes.'
+            'description' => 'A person (one of unisexual specimens) who is born with genitalia and/or secondary sexual characteristics of indeterminate sex, or which combine features of both sexes.',
         ],
         [
             'value' => self::NONE_OF_THESE_DESCRIBE_ME,
@@ -97,7 +101,7 @@ enum SexAtBirth implements ArrayAccess
             'long_name' => 'None of These Describe Me',
             'public_id' => 7554789,
             'concept_code' => ['C177109'],
-            'description' => 'A response indicating that an individual feels that no option listed is a good description for them.'
+            'description' => 'A response indicating that an individual feels that no option listed is a good description for them.',
         ],
         [
             'value' => self::PREFER_NOT_TO_ANSWER,
@@ -105,7 +109,7 @@ enum SexAtBirth implements ArrayAccess
             'long_name' => 'Prefer Not to Answer',
             'public_id' => 5684650,
             'concept_code' => ['C132222'],
-            'description' => 'A response indicating that an individual prefers or preferred not to answer.'
+            'description' => 'A response indicating that an individual prefers or preferred not to answer.',
         ],
     ];
 }

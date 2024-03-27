@@ -12,35 +12,35 @@ class DiseasePhaseTransformer extends AbstractTransformer
     protected static array $MAPPINGS = [
         [
             'value' => DiseasePhase::UNKNOWN,
-            'regex' => '/^(unknown)$/i'
+            'regex' => '/^(unknown)$/i',
         ],
         [
             'value' => DiseasePhase::NOT_REPORTED,
-            'regex' => '/^(not reported)$/i'
+            'regex' => '/^(not reported)$/i',
         ],
         [
             'value' => DiseasePhase::POST_MORTEM,
-            'regex' => '/^(post(\-| )mortem)$/i'
+            'regex' => '/^(post(\-| )mortem)$/i',
         ],
         [
             'value' => DiseasePhase::INITIAL_DIAGNOSIS,
-            'regex' => '/^(initial diagnosis)$/i'
+            'regex' => '/^(initial diagnosis)$/i',
         ],
         [
             'value' => DiseasePhase::PROGRESSION,
-            'regex' => '/^(progression)$/i'
+            'regex' => '/^(progression)$/i',
         ],
         [
             'value' => DiseasePhase::REFRACTORY,
-            'regex' => '/^(refactory|refractory)$/i'
+            'regex' => '/^(refactory|refractory)$/i',
         ],
         [
             'value' => DiseasePhase::RELAPSE,
-            'regex' => '/^(relapse)$/i'
+            'regex' => '/^(relapse)$/i',
         ],
         [
             'value' => DiseasePhase::RELAPSE_PROGRESSION,
-            'regex' => '/^(relapse(\/| )progression)$/i'
-        ]
+            'regex' => '/^(relapse(\/| )progression)$/i',
+        ],
     ];
 }

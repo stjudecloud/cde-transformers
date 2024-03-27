@@ -19,8 +19,11 @@ enum Race implements ArrayAccess
     case AMERICAN_INDIAN_OR_ALASKA_NATIVE;
 
     const CDE_ID = 2192199;
+
     const URL = 'https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=2192199%20and%20ver_nr=1.0';
+
     const DESCRIPTION = 'The text for reporting information about race based on the Office of Management and Budget (OMB) categories.';
+
     const CDE_VERSION = 1;
 
     private const DATA = [
@@ -30,7 +33,7 @@ enum Race implements ArrayAccess
             'long_name' => 'Not Allowed To Collect',
             'public_id' => 6662191,
             'concept_code' => ['C141478'],
-            'description' => 'An indicator that specifies that a collection event was not permitted.'
+            'description' => 'An indicator that specifies that a collection event was not permitted.',
         ],
         [
             'value' => self::NOT_REPORTED,
@@ -38,7 +41,7 @@ enum Race implements ArrayAccess
             'long_name' => 'Not Reported',
             'public_id' => 2572578,
             'concept_code' => ['C43234'],
-            'description' => 'Not provided or available.'
+            'description' => 'Not provided or available.',
         ],
         [
             'value' => self::UNKNOWN,
@@ -46,7 +49,7 @@ enum Race implements ArrayAccess
             'long_name' => 'Unknown',
             'public_id' => 2572577,
             'concept_code' => ['C17998'],
-            'description' => 'Not known, not observed, not recorded, or refused.'
+            'description' => 'Not known, not observed, not recorded, or refused.',
         ],
         [
             'value' => self::ASIAN,
@@ -57,7 +60,7 @@ enum Race implements ArrayAccess
             'description' => 'A person having origins in any of the original peoples of the Far East, 
 Southeast Asia, or the Indian subcontinent, including for example, 
 Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the Philippine 
-Islands, Thailand, and Vietnam. (OMB)'
+Islands, Thailand, and Vietnam. (OMB)',
         ],
         [
             'value' => self::WHITE,
@@ -66,7 +69,7 @@ Islands, Thailand, and Vietnam. (OMB)'
             'public_id' => 2572236,
             'concept_code' => ['C41261'],
             'description' => 'Denotes person with European, Middle Eastern, or North African ancestral 
-origin who identifies, or is identified, as White.'
+origin who identifies, or is identified, as White.',
         ],
         [
             'value' => self::BLACK_OR_AFRICAN_AMERICAN,
@@ -76,7 +79,7 @@ origin who identifies, or is identified, as White.'
             'concept_code' => ['C16352'],
             'description' => 'A person having origins in any of the Black racial groups of Africa. Terms 
 such as ""Haitian"" or ""Negro"" can be used in addition to ""Black or African 
-American"". (OMB)'
+American"". (OMB)',
         ],
         [
             'value' => self::AMERICAN_INDIAN_OR_ALASKA_NATIVE,
@@ -86,7 +89,7 @@ American"". (OMB)'
             'concept_code' => ['C41259'],
             'description' => 'A person having origins in any of the original peoples of North and South 
 America (including Central America) and who maintains tribal affiliation or 
-community attachment. (OMB)'
+community attachment. (OMB)',
         ],
         [
             'value' => self::NATIVE_HAWAIIAN_OR_OTHER_PACIFIC_ISLANDER,
@@ -100,7 +103,7 @@ who identify themselves as part-Hawaiian, Native Hawaiian, Guamanian or
 Chamorro, Carolinian, Samoan, Chuukese (Trukese), Fijian, Kosraean, 
 Melanesian, Micronesian, Northern Mariana Islander, Palauan, Papua New 
 Guinean, Pohnpeian, Polynesian, Solomon Islander, Tahitian, Tokelauan, 
-Tongan, Yapese, or Pacific Islander, not specified.'
-        ]
+Tongan, Yapese, or Pacific Islander, not specified.',
+        ],
     ];
 }

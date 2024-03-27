@@ -122,4 +122,3 @@ class RaceTransformerTest extends TestCase
         $this->assertTrue(Race::validate(RaceTransformer::transform('Alaska Native', 'permissible_value')));
     }
 }
-

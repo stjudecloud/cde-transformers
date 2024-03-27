@@ -12,23 +12,23 @@ class TumorClassificationTransformer extends AbstractTransformer
     protected static array $MAPPINGS = [
         [
             'value' => TumorClassification::METASTATIC,
-            'regex' => '/^(metastatic)$/i'
+            'regex' => '/^(metastatic)$/i',
         ],
         [
             'value' => TumorClassification::UNKNOWN,
-            'regex' => '/^(unknown)$/i'
+            'regex' => '/^(unknown)$/i',
         ],
         [
             'value' => TumorClassification::NOT_REPORTED,
-            'regex' => '/^(not reported)$/i'
+            'regex' => '/^(not reported)$/i',
         ],
         [
             'value' => TumorClassification::PRIMARY,
-            'regex' => '/^(primary)$/i'
+            'regex' => '/^(primary)$/i',
         ],
         [
             'value' => TumorClassification::REGIONAL,
-            'regex' => '/^(regional)$/i'
-        ]
+            'regex' => '/^(regional)$/i',
+        ],
     ];
 }

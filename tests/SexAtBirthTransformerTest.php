@@ -32,4 +32,3 @@ class SexAtBirthTransformerTest extends TestCase
         $this->assertFalse(SexAtBirth::validate(SexAtBirthTransformer::transform(123, 'permissible_value')));
     }
 }
-

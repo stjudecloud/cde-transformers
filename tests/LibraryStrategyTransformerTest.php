@@ -6,7 +6,6 @@ use PHPUnit\Framework\TestCase;
 
 class LibraryStrategyTransformerTest extends TestCase
 {
-
     public function testAMPLICONInput()
     {
         $this->assertTrue(LibraryStrategy::validate('AMPLICON'));

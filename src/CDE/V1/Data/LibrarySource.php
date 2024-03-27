@@ -26,8 +26,11 @@ enum LibrarySource implements ArrayAccess
     case VIRAL_RNA;
 
     const CDE_ID = 6285979;
+
     const URL = 'https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=6285979%20and%20ver_nr=1.0';
+
     const DESCRIPTION = 'The source of a sample collection of double stranded DNA fragments analyzed by high-throughput sequencing.';
+
     const CDE_VERSION = 1;
 
     private const DATA = [
@@ -37,7 +40,7 @@ enum LibrarySource implements ArrayAccess
             'long_name' => 'Genomic DNA',
             'public_id' => 6273408,
             'concept_code' => ['C95940'],
-            'description' => 'The DNA that is part of the normal chromosomal complement of an organism.'
+            'description' => 'The DNA that is part of the normal chromosomal complement of an organism.',
         ],
         [
             'value' => self::BULK_CELLS,
@@ -45,7 +48,7 @@ enum LibrarySource implements ArrayAccess
             'long_name' => 'Bulk Cell Specimen',
             'public_id' => 7592130,
             'concept_code' => ['C178223'],
-            'description' => 'A biospecimen consisting of multiple cells as a pool.'
+            'description' => 'A biospecimen consisting of multiple cells as a pool.',
         ],
         [
             'value' => self::BULK_NUCLEI,
@@ -53,7 +56,7 @@ enum LibrarySource implements ArrayAccess
             'long_name' => 'Bulk Nucleus Specimen',
             'public_id' => 7592129,
             'concept_code' => ['C178224'],
-            'description' => 'A biospecimen consisting of multiple nuclei as a pool.'
+            'description' => 'A biospecimen consisting of multiple nuclei as a pool.',
         ],
         [
             'value' => self::BULK_TISSUE,
@@ -62,7 +65,7 @@ enum LibrarySource implements ArrayAccess
             'public_id' => 7592128,
             'concept_code' => ['C178225'],
             'description' => 'A biospecimen either derived from a whole tissue specimen or tissue 
-section, which may consist of heterogeneous cells or tissues.'
+section, which may consist of heterogeneous cells or tissues.',
         ],
         [
             'value' => self::RNA,
@@ -72,7 +75,7 @@ section, which may consist of heterogeneous cells or tissues.'
             'concept_code' => ['C812'],
             'description' => 'Single-stranded long chain of nucleotides containing ribose. It is the end 
 product of DNA transcription by the enzyme RNA polymerase. It is essential 
-in protein synthesis.'
+in protein synthesis.',
         ],
         [
             'value' => self::SINGLE_CELLS,
@@ -80,7 +83,7 @@ in protein synthesis.'
             'long_name' => 'Single Cell Specimen',
             'public_id' => 7592127,
             'concept_code' => ['C178226'],
-            'description' => 'A biospecimen that contains the contents of a single cell.'
+            'description' => 'A biospecimen that contains the contents of a single cell.',
         ],
         [
             'value' => self::SINGLE_NUCLEI,
@@ -88,7 +91,7 @@ in protein synthesis.'
             'long_name' => 'Single Nucleus Specimen',
             'public_id' => 7592126,
             'concept_code' => ['C178227'],
-            'description' => 'A biospecimen that contains the contents of a single nucleus.'
+            'description' => 'A biospecimen that contains the contents of a single nucleus.',
         ],
         [
             'value' => self::GENOMIC_SINGLE_CELL,
@@ -96,18 +99,18 @@ in protein synthesis.'
             'long_name' => 'Genomic Single Cell',
             'public_id' => 6273400,
             'concept_code' => [],
-            'description' => 'Genomic DNA from individual cells'
+            'description' => 'Genomic DNA from individual cells',
         ],
         [
             'value' => self::OTHER,
             'permissible_value' => 'Other',
             'long_name' => 'Sequencing Library Other Source',
             'public_id' => 6287886,
-            'concept_code' => ['C148073','C17649','C25683'],
+            'concept_code' => ['C148073', 'C17649', 'C25683'],
             'description' => 'A collection of double stranded DNA fragments flanked by oligonucleotide 
 sequence adapters to enable their analysis by high-throughput sequencing.: 
 Different than the one(s) previously specified or mentioned.: Where 
-something is available or from where it originates.'
+something is available or from where it originates.',
         ],
         [
             'value' => self::METAGENOMIC,
@@ -115,7 +118,7 @@ something is available or from where it originates.'
             'long_name' => 'Metagenomic',
             'public_id' => 6273405,
             'concept_code' => [],
-            'description' => 'Mixed material from metagenome'
+            'description' => 'Mixed material from metagenome',
         ],
         [
             'value' => self::METATRANSCRIPTOMIC,
@@ -123,7 +126,7 @@ something is available or from where it originates.'
             'long_name' => 'Metatranscriptomic',
             'public_id' => 6273404,
             'concept_code' => [],
-            'description' => 'Transcription products from community targets'
+            'description' => 'Transcription products from community targets',
         ],
         [
             'value' => self::SYNTHETIC,
@@ -131,7 +134,7 @@ something is available or from where it originates.'
             'long_name' => 'Synthetic',
             'public_id' => 6273403,
             'concept_code' => [],
-            'description' => 'Synthetic DNA'
+            'description' => 'Synthetic DNA',
         ],
         [
             'value' => self::TRANSCRIPTOMIC,
@@ -140,7 +143,7 @@ something is available or from where it originates.'
             'public_id' => 6273406,
             'concept_code' => [],
             'description' => 'Transcription products or non genomic DNA (EST, cDNA, RT-PCR, screened 
-libraries)'
+libraries)',
         ],
         [
             'value' => self::TRANSCRIPTOMIC_SINGLE_CELL,
@@ -148,7 +151,7 @@ libraries)'
             'long_name' => 'Transcriptomic Single Cell',
             'public_id' => 6273399,
             'concept_code' => [],
-            'description' => 'Transcription products from individual cells'
+            'description' => 'Transcription products from individual cells',
         ],
         [
             'value' => self::VIRAL_RNA,
@@ -157,7 +160,7 @@ libraries)'
             'public_id' => 6273402,
             'concept_code' => ['C101143'],
             'description' => 'Small non-coding RNA that is encoded by viral DNA and transcribed by 
-virally-infected cells.'
-        ]
+virally-infected cells.',
+        ],
     ];
 }

@@ -12,63 +12,63 @@ class LibrarySourceTransformer extends AbstractTransformer
     protected static array $MAPPINGS = [
         [
             'value' => LibrarySource::GENOMIC_DNA,
-            'regex' => '/^(genomic dna)$/i'
+            'regex' => '/^(genomic dna)$/i',
         ],
         [
             'value' => LibrarySource::BULK_CELLS,
-            'regex' => '/^(bulk cells)$/i'
+            'regex' => '/^(bulk cells)$/i',
         ],
         [
             'value' => LibrarySource::BULK_NUCLEI,
-            'regex' => '/^(bulk nuclei)$/i'
+            'regex' => '/^(bulk nuclei)$/i',
         ],
         [
             'value' => LibrarySource::BULK_TISSUE,
-            'regex' => '/^(bulk tissue)$/i'
+            'regex' => '/^(bulk tissue)$/i',
         ],
         [
             'value' => LibrarySource::RNA,
-            'regex' => '/^(rna)$/i'
+            'regex' => '/^(rna)$/i',
         ],
         [
             'value' => LibrarySource::SINGLE_CELLS,
-            'regex' => '/^(single(-| )?cells)$/i'
+            'regex' => '/^(single(-| )?cells)$/i',
         ],
         [
             'value' => LibrarySource::SINGLE_NUCLEI,
-            'regex' => '/^(single(-| )?nuclei)$/i'
+            'regex' => '/^(single(-| )?nuclei)$/i',
         ],
         [
             'value' => LibrarySource::GENOMIC_SINGLE_CELL,
-            'regex' => '/^(genomic single cell)$/i'
+            'regex' => '/^(genomic single cell)$/i',
         ],
         [
             'value' => LibrarySource::OTHER,
-            'regex' => '/^(other)$/i'
+            'regex' => '/^(other)$/i',
         ],
         [
             'value' => LibrarySource::METAGENOMIC,
-            'regex' => '/^(metagenomic)$/i'
+            'regex' => '/^(metagenomic)$/i',
         ],
         [
             'value' => LibrarySource::METATRANSCRIPTOMIC,
-            'regex' => '/^(metatranscriptomic)$/i'
+            'regex' => '/^(metatranscriptomic)$/i',
         ],
         [
             'value' => LibrarySource::SYNTHETIC,
-            'regex' => '/^(synthetic)$/i'
+            'regex' => '/^(synthetic)$/i',
         ],
         [
             'value' => LibrarySource::TRANSCRIPTOMIC,
-            'regex' => '/^(transcriptomic)$/i'
+            'regex' => '/^(transcriptomic)$/i',
         ],
         [
             'value' => LibrarySource::TRANSCRIPTOMIC_SINGLE_CELL,
-            'regex' => '/^(transcriptomic single cell)$/i'
+            'regex' => '/^(transcriptomic single cell)$/i',
         ],
         [
             'value' => LibrarySource::VIRAL_RNA,
-            'regex' => '/^(viral rna)$/i'
-        ]
+            'regex' => '/^(viral rna)$/i',
+        ],
     ];
 }

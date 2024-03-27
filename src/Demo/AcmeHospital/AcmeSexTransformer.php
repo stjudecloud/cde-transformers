@@ -12,18 +12,19 @@ class AcmeSexTransformer extends SexTransformer
 {
     public static function getMappings(): array
     {
+        //@phpstan-ignore-next-line
         $mappings = SexSexTransformer::$MAPPINGS;
 
         $mappings[] =
             [
                 'value' => Sex::MALE,
-                'regex' => '/^(boy)$/i'
+                'regex' => '/^(boy)$/i',
             ];
 
         $mappings[] =
             [
                 'value' => Sex::FEMALE,
-                'regex' => '/^(girl)$/i'
+                'regex' => '/^(girl)$/i',
             ];
 
         return $mappings;

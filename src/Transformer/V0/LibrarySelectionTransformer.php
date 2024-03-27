@@ -12,156 +12,155 @@ class LibrarySelectionTransformer extends AbstractTransformer
     protected static array $MAPPINGS = [
         [
             'value' => LibrarySelection::MNASE,
-            'regex' => '/^(mnase)$/i'
+            'regex' => '/^(mnase)$/i',
         ],
         [
             'value' => LibrarySelection::NOT_APPLICABLE,
-            'regex' => '/^(not applicable)$/i'
+            'regex' => '/^(not applicable)$/i',
         ],
         [
             'value' => LibrarySelection::AFFINITY_ENRICHMENT,
-            'regex' => '/^(affinity enrichment)$/i'
+            'regex' => '/^(affinity enrichment)$/i',
         ],
         [
             'value' => LibrarySelection::MIRNA_SIZE_FRACTIONATION,
-            'regex' => '/^(mirna size fractionation)$/i'
+            'regex' => '/^(mirna size fractionation)$/i',
         ],
         [
             'value' => LibrarySelection::POLY_T_ENRICHMENT,
-            'regex' => '/^(poly(-| )t enrichment)$/i'
+            'regex' => '/^(poly(-| )t enrichment)$/i',
         ],
         [
             'value' => LibrarySelection::RRNA_DEPLETION,
-            'regex' => '/^(rrna depletion)$/i'
+            'regex' => '/^(rrna depletion)$/i',
         ],
         [
             'value' => LibrarySelection::FIVE_METHYLCYTIDINE_ANTIBODY,
-            'regex' => '/^(5(-| )methylcytidine antibody)$/i'
+            'regex' => '/^(5(-| )methylcytidine antibody)$/i',
         ],
         [
             'value' => LibrarySelection::CAGE,
-            'regex' => '/^(cage)$/i'
+            'regex' => '/^(cage)$/i',
         ],
         [
             'value' => LibrarySelection::CDNA,
-            'regex' => '/^(cdna)$/i'
+            'regex' => '/^(cdna)$/i',
         ],
         [
             'value' => LibrarySelection::CDNA_OLIGO_DT,
-            'regex' => '/^(cdna oligo_dt)$/i'
+            'regex' => '/^(cdna oligo_dt)$/i',
         ],
         [
             'value' => LibrarySelection::CDNA_RANDOM_PRIMING,
-            'regex' => '/^(cdna random priming)$/i'
+            'regex' => '/^(cdna random priming)$/i',
         ],
         [
             'value' => LibrarySelection::CF_H,
-            'regex' => '/^(cf(-| )h)$/i'
+            'regex' => '/^(cf(-| )h)$/i',
         ],
         [
             'value' => LibrarySelection::CF_M,
-            'regex' => '/^(cf(-| )m)$/i'
+            'regex' => '/^(cf(-| )m)$/i',
         ],
         [
             'value' => LibrarySelection::CF_S,
-            'regex' => '/^(cf(-| )s)$/i'
+            'regex' => '/^(cf(-| )s)$/i',
         ],
         [
             'value' => LibrarySelection::CF_T,
-            'regex' => '/^(cf(-| )t)$/i'
+            'regex' => '/^(cf(-| )t)$/i',
         ],
         [
             'value' => LibrarySelection::CHIP,
-            'regex' => '/^(chip)$/i'
+            'regex' => '/^(chip)$/i',
         ],
         [
             'value' => LibrarySelection::DNASE,
-            'regex' => '/^(dnase)$/i'
+            'regex' => '/^(dnase)$/i',
         ],
         [
             'value' => LibrarySelection::HMPR,
-            'regex' => '/^(hmpr)$/i'
+            'regex' => '/^(hmpr)$/i',
         ],
         [
             'value' => LibrarySelection::HYBRID_SELECTION,
-            'regex' => '/^(hybrid selection)$/i'
+            'regex' => '/^(hybrid selection)$/i',
         ],
         [
             'value' => LibrarySelection::INVERSE_RRNA,
-            'regex' => '/^(inverse rrna)$/i'
+            'regex' => '/^(inverse rrna)$/i',
         ],
         [
             'value' => LibrarySelection::MBD2_PROTEIN_METHYL_CPG_BINDING_DOMAIN,
-            'regex' => '/^(mbd2 protein methyl(-| )cpg binding domain)$/i'
+            'regex' => '/^(mbd2 protein methyl(-| )cpg binding domain)$/i',
         ],
         [
             'value' => LibrarySelection::MDA,
-            'regex' => '/^(mda)$/i'
+            'regex' => '/^(mda)$/i',
         ],
         [
             'value' => LibrarySelection::MF,
-            'regex' => '/^(mf)$/i'
+            'regex' => '/^(mf)$/i',
         ],
         [
             'value' => LibrarySelection::MSLL,
-            'regex' => '/^(msll)$/i'
+            'regex' => '/^(msll)$/i',
         ],
         [
             'value' => LibrarySelection::OLIGO_DT,
-            'regex' => '/^(oligo(-| )dt)$/i'
+            'regex' => '/^(oligo(-| )dt)$/i',
         ],
         [
             'value' => LibrarySelection::OTHER,
-            'regex' => '/^(other)$/i'
+            'regex' => '/^(other)$/i',
         ],
         [
             'value' => LibrarySelection::PADLOCK_PROBES_CAPTURE_METHOD,
-            'regex' => '/^(padlock probes capture method)$/i'
+            'regex' => '/^(padlock probes capture method)$/i',
         ],
         [
             'value' => LibrarySelection::PCR,
-            'regex' => '/^(pcr)$/i'
+            'regex' => '/^(pcr)$/i',
         ],
         [
             'value' => LibrarySelection::POLYA,
-            'regex' => '/^(polya)$/i'
+            'regex' => '/^(polya)$/i',
         ],
         [
             'value' => LibrarySelection::RACE,
-            'regex' => '/^(race)$/i'
+            'regex' => '/^(race)$/i',
         ],
         [
             'value' => LibrarySelection::RANDOM,
-            'regex' => '/^(random)$/i'
+            'regex' => '/^(random)$/i',
         ],
         [
             'value' => LibrarySelection::RANDOM_PCR,
-            'regex' => '/^(random pcr)$/i'
+            'regex' => '/^(random pcr)$/i',
         ],
         [
             'value' => LibrarySelection::REDUCED_REPRESENTATION,
-            'regex' => '/^(reduced representation)$/i'
+            'regex' => '/^(reduced representation)$/i',
         ],
         [
             'value' => LibrarySelection::REPEAT_FRACTIONATION,
-            'regex' => '/^(repeat fractionation)$/i'
+            'regex' => '/^(repeat fractionation)$/i',
         ],
         [
             'value' => LibrarySelection::RESTRICTION_DIGEST,
-            'regex' => '/^(restriction digest)$/i'
+            'regex' => '/^(restriction digest)$/i',
         ],
         [
             'value' => LibrarySelection::RT_PCR,
-            'regex' => '/^(rt(-| )pcr)$/i'
+            'regex' => '/^(rt(-| )pcr)$/i',
         ],
         [
             'value' => LibrarySelection::SIZE_FRACTIONATION,
-            'regex' => '/^(size fractionation)$/i'
+            'regex' => '/^(size fractionation)$/i',
         ],
         [
             'value' => LibrarySelection::UNSPECIFIED,
-            'regex' => '/^(unspecified)$/i'
-        ]
+            'regex' => '/^(unspecified)$/i',
+        ],
     ];
-
 }

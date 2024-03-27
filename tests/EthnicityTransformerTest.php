@@ -49,4 +49,3 @@ class EthnicityTransformerTest extends TestCase
         $this->assertTrue(Ethnicity::validate(EthnicityTransformer::transform('Unknown', 'permissible_value')));
     }
 }
-

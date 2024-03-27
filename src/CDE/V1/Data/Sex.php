@@ -23,8 +23,11 @@ enum Sex implements ArrayAccess
     case MALE;
 
     const CDE_ID = 6343385;
+
     const URL = 'https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=6343385%20and%20ver_nr=1.0';
+
     const DESCRIPTION = 'Sex of the subject as determined by the investigator.';
+
     const CDE_VERSION = 1;
 
     /**
@@ -37,7 +40,7 @@ enum Sex implements ArrayAccess
             'long_name' => 'Unknown',
             'public_id' => 5682944,
             'concept_code' => ['C17998'],
-            'description' => 'Not known, not observed, not recorded, or refused.'
+            'description' => 'Not known, not observed, not recorded, or refused.',
         ],
         [
             'value' => self::INTERSEX,
@@ -45,7 +48,7 @@ enum Sex implements ArrayAccess
             'long_name' => 'Intersex',
             'public_id' => 2575558,
             'concept_code' => ['C45908'],
-            'description' => 'A person (one of unisexual specimens) who is born with genitalia and/or secondary sexual characteristics of indeterminate sex, or which combine features of both sexes.'
+            'description' => 'A person (one of unisexual specimens) who is born with genitalia and/or secondary sexual characteristics of indeterminate sex, or which combine features of both sexes.',
         ],
         [
             'value' => self::FEMALE,
@@ -53,7 +56,7 @@ enum Sex implements ArrayAccess
             'long_name' => 'Female',
             'public_id' => 2567172,
             'concept_code' => ['C16576'],
-            'description' => 'A person who belongs to the sex that normally produces ova. The term is used to indicate biological sex distinctions, or cultural gender role distinctions, or both.'
+            'description' => 'A person who belongs to the sex that normally produces ova. The term is used to indicate biological sex distinctions, or cultural gender role distinctions, or both.',
         ],
         [
             'value' => self::MALE,
@@ -61,7 +64,7 @@ enum Sex implements ArrayAccess
             'long_name' => 'Male',
             'public_id' => 2567171,
             'concept_code' => ['C20197'],
-            'description' => 'A person who belongs to the sex that normally produces sperm. The term is used to indicate biological sex distinctions, cultural gender role distinctions, or both.'
+            'description' => 'A person who belongs to the sex that normally produces sperm. The term is used to indicate biological sex distinctions, cultural gender role distinctions, or both.',
         ],
     ];
 }

@@ -48,10 +48,13 @@ enum LibraryStrategy implements ArrayAccess
     case WXS;
 
     const CDE_ID = 6273393;
+
     const URL = 'https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=6273393%20and%20ver_nr=1.0';
+
     const DESCRIPTION = 'The overall strategy for the collection of double stranded DNA fragments flanked by oligonucleotide sequence adapters to enable their analysis by high-throughput sequencing.';
+
     const CDE_VERSION = 1;
-    
+
     private const DATA = [
         [
             'value' => self::AMPLICON,
@@ -59,7 +62,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'AMPLICON',
             'public_id' => 6273354,
             'concept_code' => [],
-            'description' => 'Sequencing of overlapping or distinct PCR or RT-PCR products.'
+            'description' => 'Sequencing of overlapping or distinct PCR or RT-PCR products.',
         ],
         [
             'value' => self::ATAC_SEQ,
@@ -67,7 +70,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'ATAC-seq',
             'public_id' => 6273353,
             'concept_code' => [],
-            'description' => 'Assay for Transposase-Accessible Chromatin (ATAC) strategy is used to study genome-wide chromatin accessibility. An alternative method to DNase-seq that uses an engineered Tn5 transposase to cleave DNA and to integrate primer DNA sequences into the cleaved genomic DNA.'
+            'description' => 'Assay for Transposase-Accessible Chromatin (ATAC) strategy is used to study genome-wide chromatin accessibility. An alternative method to DNase-seq that uses an engineered Tn5 transposase to cleave DNA and to integrate primer DNA sequences into the cleaved genomic DNA.',
         ],
         [
             'value' => self::BISULFITE_SEQ,
@@ -75,7 +78,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'Bisulfite-Seq',
             'public_id' => 6273352,
             'concept_code' => [],
-            'description' => 'Sequencing following treatment of DNA with bisulfite to convert cytosine residues to uracil depending on methylation status.'
+            'description' => 'Sequencing following treatment of DNA with bisulfite to convert cytosine residues to uracil depending on methylation status.',
         ],
         [
             'value' => self::CHIA_PET,
@@ -83,7 +86,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'ChIA-PET',
             'public_id' => 6273351,
             'concept_code' => [],
-            'description' => 'Direct sequencing of proximity-ligated chromatin immunoprecipitates.'
+            'description' => 'Direct sequencing of proximity-ligated chromatin immunoprecipitates.',
         ],
         [
             'value' => self::CHIP_SEQ,
@@ -91,14 +94,14 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'ChIP-Seq',
             'public_id' => 6273350,
             'concept_code' => ['C106049'],
-            'description' => 'A molecular genetic technique that combines chromatin immunoprecipitation (ChIP) with massively parallel DNA sequencing to map the binding sites of DNA-associated proteins in a sample of cells. First, crosslinked protein-DNA complexes are isolated using ChIP. Next, the crosslinks are broken, the proteins are removed and the purified DNA is modified with adaptor oligonucleotides to facilitate massively parallel DNA sequencing. Following sequencing, the DNA sequences that are obtained can be mapped to their genomic locations.'
-        ],[
+            'description' => 'A molecular genetic technique that combines chromatin immunoprecipitation (ChIP) with massively parallel DNA sequencing to map the binding sites of DNA-associated proteins in a sample of cells. First, crosslinked protein-DNA complexes are isolated using ChIP. Next, the crosslinks are broken, the proteins are removed and the purified DNA is modified with adaptor oligonucleotides to facilitate massively parallel DNA sequencing. Following sequencing, the DNA sequences that are obtained can be mapped to their genomic locations.',
+        ], [
             'value' => self::CLONE,
             'permissible_value' => 'CLONE',
             'long_name' => 'CLONE',
             'public_id' => 6273348,
             'concept_code' => [],
-            'description' => 'Genomic clone based (hierarchical) sequencing.'
+            'description' => 'Genomic clone based (hierarchical) sequencing.',
         ],
         [
             'value' => self::CLONEEND,
@@ -106,7 +109,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'CLONEEND',
             'public_id' => 6273347,
             'concept_code' => [],
-            'description' => 'Clone end (5\', 3\', or both) sequencing.'
+            'description' => 'Clone end (5\', 3\', or both) sequencing.',
         ],
         [
             'value' => self::CTS,
@@ -114,7 +117,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'CTS',
             'public_id' => 6273361,
             'concept_code' => [],
-            'description' => 'Concatenated Tag Sequencing'
+            'description' => 'Concatenated Tag Sequencing',
         ],
         [
             'value' => self::DNASE_HYPERSENSITIVITY,
@@ -122,7 +125,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'DNase-Hypersensitivity',
             'public_id' => 6273360,
             'concept_code' => [],
-            'description' => 'Sequencing of hypersensitive sites, or segments of open chromatin that are more readily cleaved by DNaseI.'
+            'description' => 'Sequencing of hypersensitive sites, or segments of open chromatin that are more readily cleaved by DNaseI.',
         ],
         [
             'value' => self::EST,
@@ -130,7 +133,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'EST',
             'public_id' => 6273359,
             'concept_code' => [],
-            'description' => 'Single pass sequencing of cDNA templates'
+            'description' => 'Single pass sequencing of cDNA templates',
         ],
         [
             'value' => self::FAIRE_SEQ,
@@ -138,7 +141,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'FAIRE-seq',
             'public_id' => 6273358,
             'concept_code' => ['C106051'],
-            'description' => 'A molecular genetic technique that depletes a biological sample of nucleosomal DNA and then subjects the non-nucleosome-associated DNA to next-generation sequencing. Since nucleosome disruption of chromatin is indicative of active sites of DNA transcription, this technique can isolate DNA sequences that are involved in transcriptional regulation. First, a sample is treated with formaldehyde to form DNA-protein crosslinks, followed by sample lysis and sonication. The processed sample is subjected to phenol/chloroform extraction and the DNA in the aqueous phase is analyzed using next-generation sequencing techniques.'
+            'description' => 'A molecular genetic technique that depletes a biological sample of nucleosomal DNA and then subjects the non-nucleosome-associated DNA to next-generation sequencing. Since nucleosome disruption of chromatin is indicative of active sites of DNA transcription, this technique can isolate DNA sequences that are involved in transcriptional regulation. First, a sample is treated with formaldehyde to form DNA-protein crosslinks, followed by sample lysis and sonication. The processed sample is subjected to phenol/chloroform extraction and the DNA in the aqueous phase is analyzed using next-generation sequencing techniques.',
         ],
         [
             'value' => self::FINISHING,
@@ -146,7 +149,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'FINISHING',
             'public_id' => 6273356,
             'concept_code' => [],
-            'description' => 'Sequencing intended to finish (close) gaps in existing coverage.'
+            'description' => 'Sequencing intended to finish (close) gaps in existing coverage.',
         ],
         [
             'value' => self::FL_CDNA,
@@ -154,7 +157,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'FL-cDNA',
             'public_id' => 6273392,
             'concept_code' => [],
-            'description' => 'Full-length sequencing of cDNA templates.'
+            'description' => 'Full-length sequencing of cDNA templates.',
         ],
         [
             'value' => self::HI_C,
@@ -162,7 +165,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'Hi-C',
             'public_id' => 6273391,
             'concept_code' => [],
-            'description' => 'Chromosome Conformation Capture technique where a biotin-labeled nucleotide is incorporated at the ligation junction, enabling selective purification of chimeric DNA ligation junctions followed by deep sequencing.'
+            'description' => 'Chromosome Conformation Capture technique where a biotin-labeled nucleotide is incorporated at the ligation junction, enabling selective purification of chimeric DNA ligation junctions followed by deep sequencing.',
         ],
         [
             'value' => self::MBD_SEQ,
@@ -170,7 +173,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'MBD-Seq',
             'public_id' => 6273390,
             'concept_code' => [],
-            'description' => 'Direct sequencing of methylated fractions sequencing strategy.'
+            'description' => 'Direct sequencing of methylated fractions sequencing strategy.',
         ],
         [
             'value' => self::MEDIP_SEQ,
@@ -178,7 +181,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'MeDIP-Seq',
             'public_id' => 6273389,
             'concept_code' => [],
-            'description' => 'Methylated DNA Immunoprecipitation Sequencing strategy'
+            'description' => 'Methylated DNA Immunoprecipitation Sequencing strategy',
         ],
         [
             'value' => self::MIRNA_SEQ,
@@ -186,7 +189,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'miRNA-Seq',
             'public_id' => 6273388,
             'concept_code' => [],
-            'description' => 'Random sequencing of small miRNAs'
+            'description' => 'Random sequencing of small miRNAs',
         ],
         [
             'value' => self::MNASE_SEQ,
@@ -194,7 +197,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'MNase-Seq',
             'public_id' => 6273387,
             'concept_code' => [],
-            'description' => 'Direct sequencing following MNase digestion'
+            'description' => 'Direct sequencing following MNase digestion',
         ],
         [
             'value' => self::MRE_SEQ,
@@ -202,7 +205,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'MRE-Seq',
             'public_id' => 6273386,
             'concept_code' => [],
-            'description' => 'Methylation-Sensitive Restriction Enzyme Sequencing strategy'
+            'description' => 'Methylation-Sensitive Restriction Enzyme Sequencing strategy',
         ],
         [
             'value' => self::NCRNA_SEQ,
@@ -210,7 +213,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'ncRNA-Seq',
             'public_id' => 6273385,
             'concept_code' => [],
-            'description' => 'Capture of other non-coding RNA types, including post-translation modification types such as snRNA (small nuclear RNA) or snoRNA (small nucleolar RNA), or expression regulation types such as siRNA (small interfering RNA) or piRNA/piwi/RNA (piwi-interacting RNA).'
+            'description' => 'Capture of other non-coding RNA types, including post-translation modification types such as snRNA (small nuclear RNA) or snoRNA (small nucleolar RNA), or expression regulation types such as siRNA (small interfering RNA) or piRNA/piwi/RNA (piwi-interacting RNA).',
         ],
         [
             'value' => self::OTHER,
@@ -218,7 +221,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'Other Library strategy',
             'public_id' => 6273371,
             'concept_code' => [],
-            'description' => 'Library strategy not listed (please include additional info in the design description )'
+            'description' => 'Library strategy not listed (please include additional info in the design description )',
         ],
         [
             'value' => self::POOLCLONE,
@@ -226,7 +229,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'POOLCLONE',
             'public_id' => 6273384,
             'concept_code' => [],
-            'description' => 'Shotgun of pooled clones (usually BACs and Fosmids)'
+            'description' => 'Shotgun of pooled clones (usually BACs and Fosmids)',
         ],
         [
             'value' => self::RAD_SEQ,
@@ -234,7 +237,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'RAD-Seq',
             'public_id' => 6273383,
             'concept_code' => [],
-            'description' => 'Restriction site Associated DNA Sequencing'
+            'description' => 'Restriction site Associated DNA Sequencing',
         ],
         [
             'value' => self::RIP_SEQ,
@@ -242,7 +245,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'RIP-Seq',
             'public_id' => 6273382,
             'concept_code' => [],
-            'description' => 'Direct sequencing of RNA immunoprecipitates (includes CLIP-Seq, HITS-CLIP and PAR-CLIP).'
+            'description' => 'Direct sequencing of RNA immunoprecipitates (includes CLIP-Seq, HITS-CLIP and PAR-CLIP).',
         ],
         [
             'value' => self::RNA_SEQ,
@@ -250,7 +253,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'RNA-Seq',
             'public_id' => 6273381,
             'concept_code' => [],
-            'description' => 'Random sequencing of whole transcriptome'
+            'description' => 'Random sequencing of whole transcriptome',
         ],
         [
             'value' => self::SELEX,
@@ -258,7 +261,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'SELEX',
             'public_id' => 6273380,
             'concept_code' => [],
-            'description' => 'Systematic Evolution of Ligands by EXponential enrichment'
+            'description' => 'Systematic Evolution of Ligands by EXponential enrichment',
         ],
         [
             'value' => self::SNATAC_SEQ,
@@ -266,7 +269,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'Single Nucleus ATAC-Seq',
             'public_id' => 13260568,
             'concept_code' => ['C198496'],
-            'description' => 'A molecular genetic technique where DNA is harvested from a single cell nucleus (sn) samples and amplified to create a genomic library. Then the library is subjected to ATAC-seq, which isolates and sequences regions rich in open chromatin.'
+            'description' => 'A molecular genetic technique where DNA is harvested from a single cell nucleus (sn) samples and amplified to create a genomic library. Then the library is subjected to ATAC-seq, which isolates and sequences regions rich in open chromatin.',
         ],
         [
             'value' => self::SSRNA_SEQ,
@@ -274,7 +277,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'ssRNA-seq',
             'public_id' => 6273379,
             'concept_code' => [],
-            'description' => 'Strand-specific RNA sequencing'
+            'description' => 'Strand-specific RNA sequencing',
         ],
         [
             'value' => self::SYNTHETIC_LONG_READ,
@@ -282,7 +285,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'Synthetic-Long-Read',
             'public_id' => 6273378,
             'concept_code' => [],
-            'description' => 'Reconstruction of fragments into long reads'
+            'description' => 'Reconstruction of fragments into long reads',
         ],
         [
             'value' => self::TARGETED_CAPTURE,
@@ -290,7 +293,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'Targeted-Capture',
             'public_id' => 6273377,
             'concept_code' => [],
-            'description' => 'Sequencing specific genomic regions in a high-throughput manner.'
+            'description' => 'Sequencing specific genomic regions in a high-throughput manner.',
         ],
         [
             'value' => self::TETHERED_CHROMATIN_CONFORMATION_CAPTURE,
@@ -298,7 +301,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'Tethered Chromatin Conformation Capture',
             'public_id' => 6273376,
             'concept_code' => [],
-            'description' => 'Method for genome-wide mapping of chromatin interactions.'
+            'description' => 'Method for genome-wide mapping of chromatin interactions.',
         ],
         [
             'value' => self::TN_SEQ,
@@ -306,7 +309,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'Tn-Seq',
             'public_id' => 6273375,
             'concept_code' => [],
-            'description' => 'Sequencing from transposon insertion sites.'
+            'description' => 'Sequencing from transposon insertion sites.',
         ],
         [
             'value' => self::VALIDATION,
@@ -314,7 +317,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'Validation',
             'public_id' => 7537126,
             'concept_code' => ['C16237'],
-            'description' => 'The act of validating; finding or testing the truth of something.'
+            'description' => 'The act of validating; finding or testing the truth of something.',
         ],
         [
             'value' => self::WCS,
@@ -322,7 +325,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'WCS',
             'public_id' => 6273374,
             'concept_code' => [],
-            'description' => 'Random sequencing of a whole chromosome or other replicon isolated from a genome.'
+            'description' => 'Random sequencing of a whole chromosome or other replicon isolated from a genome.',
         ],
         [
             'value' => self::WGA,
@@ -330,7 +333,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'WGA',
             'public_id' => 6273373,
             'concept_code' => [],
-            'description' => 'Random sequencing of the whole genome following non-pcr amplification.'
+            'description' => 'Random sequencing of the whole genome following non-pcr amplification.',
         ],
         [
             'value' => self::WGS,
@@ -338,7 +341,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'Whole Genome Sequencing',
             'public_id' => 3463244,
             'concept_code' => ['C101294'],
-            'description' => 'A procedure that can determine the DNA sequence for nearly the entire genome of an individual.'
+            'description' => 'A procedure that can determine the DNA sequence for nearly the entire genome of an individual.',
         ],
         [
             'value' => self::WXS,
@@ -346,7 +349,7 @@ enum LibraryStrategy implements ArrayAccess
             'long_name' => 'WXS',
             'public_id' => 6273372,
             'concept_code' => [],
-            'description' => 'Random sequencing of exonic regions selected from the genome.'
+            'description' => 'Random sequencing of exonic regions selected from the genome.',
         ],
     ];
 }
