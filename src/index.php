@@ -1,10 +1,10 @@
 <?php
 
-use CCDI\CDE\V1\Data\Sex;
 use CCDI\CDE\V1\Data\Race;
-use CCDI\Demo\AcmeHospital\AcmeSexAtBirthTransformer;
-use CCDI\Transformer\V0\SexAtBirthTransformer;
+use CCDI\CDE\V1\Data\SexAtBirth;
+use CCDI\Demo\AcmeHospital\AcmeSexTransformer;
 use CCDI\Transformer\V0\RaceTransformer;
+use CCDI\Transformer\V0\SexAtBirthTransformer;
 
 require_once 'vendor/autoload.php';
 
@@ -30,28 +30,29 @@ if (SexAtBirth::validate('Female')) {
 }
 
 // Check array access to 'concept_code' for 'Female' from the default Sex CDE Class
-if ('C46110' == SexAtBirth::FEMALE['concept_code'][0]) {
+if (SexAtBirth::FEMALE['concept_code'][0] == 'C46110') {
     echo "Valid\n";
 } else {
     echo "Invalid\n";
 }
 
 // Check array access to 'permissible_value' for 'Female' from the default SexAtBirthTransformer
-if ('Female' == SexAtBirthTransformer::transform('FEMALE')['permissible_value']) {
+if (SexAtBirthTransformer::transform('FEMALE')['permissible_value'] == 'Female') {
     echo "Valid\n";
 } else {
     echo "Invalid\n";
 }
 
 // Check array access to 'permissible_value' for 'f' from the default SexAtBirthTransformer
-if ('Female' == SexAtBirthTransformer::transform('f')['permissible_value']) {
+if (SexAtBirthTransformer::transform('f')['permissible_value'] == 'Female') {
     echo "Valid\n";
 } else {
     echo "Invalid\n";
 }
 
 // Check access via passed key when transforming 'Boy' to 'Male' on the custom AcmeSexAtBirthTransformer
-if ('Male' == AcmeSexAtBirthTransformer::transform('Boy', 'permissible_value')) {
+//@phpstan-ignore-next-line
+if (AcmeSexTransformer::transform('Boy', 'permissible_value') == 'Male') {
     echo "Valid\n";
 } else {
     echo "Invalid\n";

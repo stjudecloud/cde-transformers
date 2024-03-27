@@ -33,4 +33,3 @@ class SexTransformerTest extends TestCase
         $this->assertFalse(Sex::validate(SexTransformer::transform('X')));
     }
 }
-

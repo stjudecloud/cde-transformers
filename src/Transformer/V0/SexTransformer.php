@@ -12,19 +12,19 @@ class SexTransformer extends AbstractTransformer
     protected static array $MAPPINGS = [
         [
             'value' => Sex::UNKNOWN,
-            'regex' => '/^(unknown)$/i'
+            'regex' => '/^(unknown)$/i',
         ],
         [
             'value' => Sex::FEMALE,
-            'regex' => '/^(f|female)$/i'
+            'regex' => '/^(f|female)$/i',
         ],
         [
             'value' => Sex::MALE,
-            'regex' => '/^(m|male)$/i'
+            'regex' => '/^(m|male)$/i',
         ],
         [
             'value' => Sex::INTERSEX,
-            'regex' => '/^(intersex|undifferentiated)$/i'
-        ]
+            'regex' => '/^(intersex|undifferentiated)$/i',
+        ],
     ];
 }

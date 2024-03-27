@@ -28,11 +28,7 @@ trait ValidatorTrait
      */
     public static function getPermissibleValues(): array
     {
-        if (self::DATA) {
-            return self::DATA;
-        }
-
-        return [];
+        return self::DATA;
     }
 
     /**
@@ -42,9 +38,6 @@ trait ValidatorTrait
      * E.g. this is possible to directly access the long_name for FEMALE from Data SexAtBirth::FEMALE['long_name']
      *
      * The alternative would be need to use SexAtBirth::Data and iterate over the elements to find SexAtBirth::FEMALE
-     *
-     * @param $offset
-     * @return mixed
      */
     public function offsetGet($offset): mixed
     {
@@ -71,6 +64,7 @@ trait ValidatorTrait
 
     /**
      * The const DATA cannot be modified
+     *
      * @throws ReadOnlyArrayAccess
      */
     public function offsetSet(mixed $offset, mixed $value): void
@@ -80,6 +74,7 @@ trait ValidatorTrait
 
     /**
      * The const DATA cannot be modified
+     *
      * @throws ReadOnlyArrayAccess
      */
     public function offsetUnset(mixed $offset): void

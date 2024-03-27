@@ -12,23 +12,23 @@ class VitalStatusTransformer extends AbstractTransformer
     protected static array $MAPPINGS = [
         [
             'value' => VitalStatus::NOT_REPORTED,
-            'regex' => '/^(not reported)$/i'
+            'regex' => '/^(not reported)$/i',
         ],
         [
             'value' => VitalStatus::UNKNOWN,
-            'regex' => '/^(unknown)$/i'
+            'regex' => '/^(unknown)$/i',
         ],
         [
             'value' => VitalStatus::UNSPECIFIED,
-            'regex' => '/^(unspecified)$/i'
+            'regex' => '/^(unspecified)$/i',
         ],
         [
             'value' => VitalStatus::ALIVE,
-            'regex' => '/^(alive)$/i'
+            'regex' => '/^(alive)$/i',
         ],
         [
             'value' => VitalStatus::DEAD,
-            'regex' => '/^(dead)$/i'
-        ]
+            'regex' => '/^(dead)$/i',
+        ],
     ];
 }
