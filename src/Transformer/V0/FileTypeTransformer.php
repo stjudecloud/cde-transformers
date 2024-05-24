@@ -135,6 +135,10 @@ class FileTypeTransformer extends AbstractTransformer
             'regex' => '/^(html?)$/i',
         ],
         [
+            'value' => FileType::HTSEQ,
+            'regex' => '/^(htseq?)$/i',
+        ],
+        [
             'value' => FileType::IDAT,
             'regex' => '/^(idat?)$/i',
         ],
