@@ -18,7 +18,7 @@ trait PositiveNumberValidatorTrait
     {
         return self::DATA;
     }
-    
+
     public function offsetGet($offset): mixed
     {
         return null;
