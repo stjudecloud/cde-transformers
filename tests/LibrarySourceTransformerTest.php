@@ -32,7 +32,7 @@ class LibrarySourceTransformerTest extends TestCase
 
     public function testBulkTissueInput()
     {
-        $this->assertTrue(LibrarySource::validate('Bulk tissue'));
+        $this->assertTrue(LibrarySource::validate('Bulk Tissue'));
         $this->assertTrue(LibrarySource::validate(LibrarySourceTransformer::transform('bulk tissue', 'permissible_value')));
         $this->assertTrue(LibrarySource::validate(LibrarySourceTransformer::transform('BULK TISSUE', 'permissible_value')));
         $this->assertTrue(LibrarySource::validate(LibrarySourceTransformer::transform('Bulk Tissue', 'permissible_value')));
