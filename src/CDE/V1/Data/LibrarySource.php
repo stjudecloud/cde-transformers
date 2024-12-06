@@ -60,7 +60,7 @@ enum LibrarySource implements ArrayAccess
         ],
         [
             'value' => self::BULK_TISSUE,
-            'permissible_value' => 'Bulk tissue',
+            'permissible_value' => 'Bulk Tissue',
             'long_name' => 'Bulk Tissue Specimen',
             'public_id' => 7592128,
             'concept_code' => ['C178225'],
