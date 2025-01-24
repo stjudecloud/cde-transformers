@@ -69,7 +69,7 @@ trait ValidatorTrait
      */
     public function offsetSet(mixed $offset, mixed $value): void
     {
-        throw new ReadOnlyArrayAccess();
+        throw new ReadOnlyArrayAccess;
     }
 
     /**
@@ -79,6 +79,6 @@ trait ValidatorTrait
      */
     public function offsetUnset(mixed $offset): void
     {
-        throw new ReadOnlyArrayAccess();
+        throw new ReadOnlyArrayAccess;
     }
 }

@@ -51,7 +51,7 @@ if (SexAtBirthTransformer::transform('f')['permissible_value'] == 'Female') {
 }
 
 // Check access via passed key when transforming 'Boy' to 'Male' on the custom AcmeSexAtBirthTransformer
-//@phpstan-ignore-next-line
+// @phpstan-ignore-next-line
 if (AcmeSexTransformer::transform('Boy', 'permissible_value') == 'Male') {
     echo "Valid\n";
 } else {

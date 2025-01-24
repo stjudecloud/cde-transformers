@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 class TumorClassificationTransformerTest extends TestCase
 {
-    public function testMetastaticInput()
+    public function test_metastatic_input()
     {
         $this->assertTrue(TumorClassification::validate('Metastatic'));
         $this->assertTrue(TumorClassification::validate(TumorClassificationTransformer::transform('metastatic', 'permissible_value')));
@@ -14,7 +14,7 @@ class TumorClassificationTransformerTest extends TestCase
         $this->assertTrue(TumorClassification::validate(TumorClassificationTransformer::transform('Metastatic', 'permissible_value')));
     }
 
-    public function testPrimaryInput()
+    public function test_primary_input()
     {
         $this->assertTrue(TumorClassification::validate('Primary'));
         $this->assertTrue(TumorClassification::validate(TumorClassificationTransformer::transform('primary', 'permissible_value')));
@@ -22,7 +22,7 @@ class TumorClassificationTransformerTest extends TestCase
         $this->assertTrue(TumorClassification::validate(TumorClassificationTransformer::transform('Primary', 'permissible_value')));
     }
 
-    public function testRegionalInput()
+    public function test_regional_input()
     {
         $this->assertTrue(TumorClassification::validate('Regional'));
         $this->assertTrue(TumorClassification::validate(TumorClassificationTransformer::transform('regional', 'permissible_value')));
@@ -30,7 +30,7 @@ class TumorClassificationTransformerTest extends TestCase
         $this->assertTrue(TumorClassification::validate(TumorClassificationTransformer::transform('Regional', 'permissible_value')));
     }
 
-    public function testNotReportedInput()
+    public function test_not_reported_input()
     {
         $this->assertTrue(TumorClassification::validate('Not Reported'));
         $this->assertTrue(TumorClassification::validate(TumorClassificationTransformer::transform('not reported', 'permissible_value')));
@@ -38,7 +38,7 @@ class TumorClassificationTransformerTest extends TestCase
         $this->assertTrue(TumorClassification::validate(TumorClassificationTransformer::transform('Not reported', 'permissible_value')));
     }
 
-    public function testUnknownInput()
+    public function test_unknown_input()
     {
         $this->assertTrue(TumorClassification::validate('Unknown'));
         $this->assertTrue(TumorClassification::validate(TumorClassificationTransformer::transform('unknown', 'permissible_value')));

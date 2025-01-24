@@ -17,7 +17,7 @@ class AbstractTransformer
 
     public static function getMappings(): array
     {
-        //@phpstan-ignore-next-line
+        // @phpstan-ignore-next-line
         return static::$MAPPINGS ?? [];
     }
 }

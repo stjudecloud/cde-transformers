@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 class LibrarySelectionTransformerTest extends TestCase
 {
-    public function testMNaseInput()
+    public function test_m_nase_input()
     {
         $this->assertTrue(LibrarySelection::validate('MNase'));
         $this->assertTrue(
@@ -20,7 +20,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testNotapplicableInput()
+    public function test_notapplicable_input()
     {
         $this->assertTrue(LibrarySelection::validate('Not applicable'));
         $this->assertTrue(
@@ -34,7 +34,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testAffinityEnrichmentInput()
+    public function test_affinity_enrichment_input()
     {
         $this->assertTrue(LibrarySelection::validate('Affinity Enrichment'));
         $this->assertTrue(
@@ -54,7 +54,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testmiRNASizeFractionationInput()
+    public function testmi_rna_size_fractionation_input()
     {
         $this->assertTrue(LibrarySelection::validate('miRNA Size Fractionation'));
         $this->assertTrue(
@@ -74,21 +74,21 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testPolyTEnrichmentInput()
+    public function test_poly_a_enriched_input()
     {
-        $this->assertTrue(LibrarySelection::validate('Poly-T Enrichment'));
+        $this->assertTrue(LibrarySelection::validate('Poly-A Enriched Genomic Library'));
         $this->assertTrue(
-            LibrarySelection::validate(LibrarySelectionTransformer::transform('poly-t enrichment', 'permissible_value'))
+            LibrarySelection::validate(LibrarySelectionTransformer::transform('Poly-a Enriched Genomic Library', 'permissible_value'))
         );
         $this->assertTrue(
-            LibrarySelection::validate(LibrarySelectionTransformer::transform('POLY-T ENRICHMENT', 'permissible_value'))
+            LibrarySelection::validate(LibrarySelectionTransformer::transform('Poly-A Enriched Genomic Library', 'permissible_value'))
         );
         $this->assertTrue(
-            LibrarySelection::validate(LibrarySelectionTransformer::transform('Poly-T Enrichment', 'permissible_value'))
+            LibrarySelection::validate(LibrarySelectionTransformer::transform('POLY-A ENRICHED Genomic Library', 'permissible_value'))
         );
     }
 
-    public function testrRNADepletionInput()
+    public function testr_rna_depletion_input()
     {
         $this->assertTrue(LibrarySelection::validate('rRNA Depletion'));
         $this->assertTrue(
@@ -102,7 +102,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function test5methylcytidineantibodyInput()
+    public function test5methylcytidineantibody_input()
     {
         $this->assertTrue(LibrarySelection::validate('5-methylcytidine antibody'));
         $this->assertTrue(
@@ -122,7 +122,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testCAGEInput()
+    public function test_cage_input()
     {
         $this->assertTrue(LibrarySelection::validate('CAGE'));
         $this->assertTrue(
@@ -136,7 +136,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testcDNAInput()
+    public function testc_dna_input()
     {
         $this->assertTrue(LibrarySelection::validate('cDNA'));
         $this->assertTrue(
@@ -150,7 +150,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testcDNAoligo_dTInput()
+    public function testc_dn_aoligo_d_t_input()
     {
         $this->assertTrue(LibrarySelection::validate('cDNA oligo_dT'));
         $this->assertTrue(
@@ -164,7 +164,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testcDNArandomprimingInput()
+    public function testc_dn_arandompriming_input()
     {
         $this->assertTrue(LibrarySelection::validate('cDNA random priming'));
         $this->assertTrue(
@@ -184,7 +184,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testCFHInput()
+    public function test_cfh_input()
     {
         $this->assertTrue(LibrarySelection::validate('CF-H'));
         $this->assertTrue(
@@ -198,7 +198,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testCFMInput()
+    public function test_cfm_input()
     {
         $this->assertTrue(LibrarySelection::validate('CF-M'));
         $this->assertTrue(
@@ -212,7 +212,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testCFSInput()
+    public function test_cfs_input()
     {
         $this->assertTrue(LibrarySelection::validate('CF-S'));
         $this->assertTrue(
@@ -226,7 +226,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testCFTInput()
+    public function test_cft_input()
     {
         $this->assertTrue(LibrarySelection::validate('CF-T'));
         $this->assertTrue(
@@ -240,7 +240,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testChIPInput()
+    public function test_ch_ip_input()
     {
         $this->assertTrue(LibrarySelection::validate('ChIP'));
         $this->assertTrue(
@@ -260,7 +260,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testDNAseInput()
+    public function test_dn_ase_input()
     {
         $this->assertTrue(LibrarySelection::validate('DNAse'));
         $this->assertTrue(
@@ -274,7 +274,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testHMPRInput()
+    public function test_hmpr_input()
     {
         $this->assertTrue(LibrarySelection::validate('HMPR'));
         $this->assertTrue(
@@ -288,7 +288,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testHybridSelectionInput()
+    public function test_hybrid_selection_input()
     {
         $this->assertTrue(LibrarySelection::validate('Hybrid Selection'));
         $this->assertTrue(
@@ -302,7 +302,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testInverserRNAInput()
+    public function test_inverser_rna_input()
     {
         $this->assertTrue(LibrarySelection::validate('Inverse rRNA'));
         $this->assertTrue(
@@ -316,7 +316,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testMBD2proteinmethylCpGbindingdomainInput()
+    public function test_mb_d2proteinmethyl_cp_gbindingdomain_input()
     {
         $this->assertTrue(LibrarySelection::validate('MBD2 protein methyl-CpG binding domain'));
         $this->assertTrue(
@@ -336,7 +336,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testMDAInput()
+    public function test_mda_input()
     {
         $this->assertTrue(LibrarySelection::validate('MDA'));
         $this->assertTrue(
@@ -350,7 +350,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testMFInput()
+    public function test_mf_input()
     {
         $this->assertTrue(LibrarySelection::validate('MF'));
         $this->assertTrue(
@@ -364,7 +364,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testMSLLInput()
+    public function test_msll_input()
     {
         $this->assertTrue(LibrarySelection::validate('MSLL'));
         $this->assertTrue(
@@ -384,21 +384,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testOligodTInput()
-    {
-        $this->assertTrue(LibrarySelection::validate('Oligo-dT'));
-        $this->assertTrue(
-            LibrarySelection::validate(LibrarySelectionTransformer::transform('oligo-dt', 'permissible_value'))
-        );
-        $this->assertTrue(
-            LibrarySelection::validate(LibrarySelectionTransformer::transform('OLIGO-DT', 'permissible_value'))
-        );
-        $this->assertTrue(
-            LibrarySelection::validate(LibrarySelectionTransformer::transform('Oligo-dT', 'permissible_value'))
-        );
-    }
-
-    public function testOtherInput()
+    public function test_other_input()
     {
         $this->assertTrue(LibrarySelection::validate('Other'));
         $this->assertTrue(
@@ -418,7 +404,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testPadlockprobescapturemethodInput()
+    public function test_padlockprobescapturemethod_input()
     {
         $this->assertTrue(LibrarySelection::validate('Padlock probes capture method'));
         $this->assertTrue(
@@ -438,7 +424,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testPCRInput()
+    public function test_pcr_input()
     {
         $this->assertTrue(LibrarySelection::validate('PCR'));
         $this->assertTrue(
@@ -458,27 +444,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testPolyAInput()
-    {
-        $this->assertTrue(LibrarySelection::validate('PolyA'));
-        $this->assertTrue(
-            LibrarySelection::validate(
-                LibrarySelectionTransformer::transform('polyA', 'permissible_value')
-            )
-        );
-        $this->assertTrue(
-            LibrarySelection::validate(
-                LibrarySelectionTransformer::transform('POLYA', 'permissible_value')
-            )
-        );
-        $this->assertTrue(
-            LibrarySelection::validate(
-                LibrarySelectionTransformer::transform('PolyA', 'permissible_value')
-            )
-        );
-    }
-
-    public function testRACEInput()
+    public function test_race_input()
     {
         $this->assertTrue(LibrarySelection::validate('RACE'));
         $this->assertTrue(
@@ -498,7 +464,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testRandomInput()
+    public function test_random_input()
     {
         $this->assertTrue(LibrarySelection::validate('Random'));
         $this->assertTrue(
@@ -512,7 +478,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testRandomPCRInput()
+    public function test_random_pcr_input()
     {
         $this->assertTrue(LibrarySelection::validate('Random PCR'));
         $this->assertTrue(
@@ -526,7 +492,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testReducedRepresentationInput()
+    public function test_reduced_representation_input()
     {
         $this->assertTrue(LibrarySelection::validate('Reduced Representation'));
         $this->assertTrue(
@@ -546,7 +512,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testRepeatfractionationInput()
+    public function test_repeatfractionation_input()
     {
         $this->assertTrue(LibrarySelection::validate('Repeat fractionation'));
         $this->assertTrue(
@@ -566,7 +532,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testRestrictionDigestInput()
+    public function test_restriction_digest_input()
     {
         $this->assertTrue(LibrarySelection::validate('Restriction Digest'));
         $this->assertTrue(
@@ -595,7 +561,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testRTPCRInput()
+    public function test_rtpcr_input()
     {
         $this->assertTrue(LibrarySelection::validate('RT-PCR'));
         $this->assertTrue(
@@ -609,7 +575,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testSizefractionationInput()
+    public function test_sizefractionation_input()
     {
         $this->assertTrue(LibrarySelection::validate('Size fractionation'));
         $this->assertTrue(
@@ -629,7 +595,7 @@ class LibrarySelectionTransformerTest extends TestCase
         );
     }
 
-    public function testUnspecifiedInput()
+    public function test_unspecified_input()
     {
         $this->assertTrue(LibrarySelection::validate('Unspecified'));
         $this->assertTrue(

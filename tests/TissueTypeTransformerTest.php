@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 class TissueTypeTransformerTest extends TestCase
 {
-    public function testAbnormalInput()
+    public function test_abnormal_input()
     {
         $this->assertTrue(TissueType::validate('Abnormal'));
         $this->assertTrue(TissueType::validate(TissueTypeTransformer::transform('abnormal', 'permissible_value')));
@@ -14,7 +14,7 @@ class TissueTypeTransformerTest extends TestCase
         $this->assertTrue(TissueType::validate(TissueTypeTransformer::transform('Abnormal', 'permissible_value')));
     }
 
-    public function testNormalInput()
+    public function test_normal_input()
     {
         $this->assertTrue(TissueType::validate('Normal'));
         $this->assertTrue(TissueType::validate(TissueTypeTransformer::transform('normal', 'permissible_value')));
@@ -22,7 +22,7 @@ class TissueTypeTransformerTest extends TestCase
         $this->assertTrue(TissueType::validate(TissueTypeTransformer::transform('Normal', 'permissible_value')));
     }
 
-    public function testPeritumoralInput()
+    public function test_peritumoral_input()
     {
         $this->assertTrue(TissueType::validate('Peritumoral'));
         $this->assertTrue(TissueType::validate(TissueTypeTransformer::transform('peritumoral', 'permissible_value')));
@@ -30,7 +30,7 @@ class TissueTypeTransformerTest extends TestCase
         $this->assertTrue(TissueType::validate(TissueTypeTransformer::transform('Peritumoral', 'permissible_value')));
     }
 
-    public function testTumorInput()
+    public function test_tumor_input()
     {
         $this->assertTrue(TissueType::validate('Tumor'));
         $this->assertTrue(TissueType::validate(TissueTypeTransformer::transform('tumor', 'permissible_value')));

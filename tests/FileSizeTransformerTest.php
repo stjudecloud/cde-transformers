@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 class FileSizeTransformerTest extends TestCase
 {
-    public function testFileSizeInput()
+    public function test_file_size_input()
     {
         $this->assertTrue(FileSize::validate(1234234234));
         $this->assertTrue(FileSize::validate(1));

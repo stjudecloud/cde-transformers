@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 class VitalStatusTransformerTest extends TestCase
 {
-    public function testNotReportedInput()
+    public function test_not_reported_input()
     {
         $this->assertTrue(VitalStatus::validate('Not reported'));
         $this->assertTrue(VitalStatus::validate(VitalStatusTransformer::transform('not reported', 'permissible_value')));
@@ -14,7 +14,7 @@ class VitalStatusTransformerTest extends TestCase
         $this->assertTrue(VitalStatus::validate(VitalStatusTransformer::transform('Not reported', 'permissible_value')));
     }
 
-    public function testAliveInput()
+    public function test_alive_input()
     {
         $this->assertTrue(VitalStatus::validate('Alive'));
         $this->assertTrue(VitalStatus::validate(VitalStatusTransformer::transform('alive', 'permissible_value')));
@@ -22,7 +22,7 @@ class VitalStatusTransformerTest extends TestCase
         $this->assertTrue(VitalStatus::validate(VitalStatusTransformer::transform('Alive', 'permissible_value')));
     }
 
-    public function testDeadInput()
+    public function test_dead_input()
     {
         $this->assertTrue(VitalStatus::validate('Dead'));
         $this->assertTrue(VitalStatus::validate(VitalStatusTransformer::transform('dead', 'permissible_value')));
@@ -30,7 +30,7 @@ class VitalStatusTransformerTest extends TestCase
         $this->assertTrue(VitalStatus::validate(VitalStatusTransformer::transform('Dead', 'permissible_value')));
     }
 
-    public function testUnknownInput()
+    public function test_unknown_input()
     {
         $this->assertTrue(VitalStatus::validate('Unknown'));
         $this->assertTrue(VitalStatus::validate(VitalStatusTransformer::transform('unknown', 'permissible_value')));
@@ -38,7 +38,7 @@ class VitalStatusTransformerTest extends TestCase
         $this->assertTrue(VitalStatus::validate(VitalStatusTransformer::transform('Unknown', 'permissible_value')));
     }
 
-    public function testUnspecifiedInput()
+    public function test_unspecified_input()
     {
         $this->assertTrue(VitalStatus::validate('Unspecified'));
         $this->assertTrue(VitalStatus::validate(VitalStatusTransformer::transform('unspecified', 'permissible_value')));
