@@ -27,8 +27,8 @@ class LibrarySelectionTransformer extends AbstractTransformer
             'regex' => '/^(mirna size fractionation)$/i',
         ],
         [
-            'value' => LibrarySelection::POLY_T_ENRICHMENT,
-            'regex' => '/^(poly(-| )t enrichment)$/i',
+            'value' => LibrarySelection::POLY_A_ENRICHED,
+            'regex' => '/^(poly-a enriched genomic library)$/i',
         ],
         [
             'value' => LibrarySelection::RRNA_DEPLETION,
@@ -107,10 +107,6 @@ class LibrarySelectionTransformer extends AbstractTransformer
             'regex' => '/^(msll)$/i',
         ],
         [
-            'value' => LibrarySelection::OLIGO_DT,
-            'regex' => '/^(oligo(-| )dt)$/i',
-        ],
-        [
             'value' => LibrarySelection::OTHER,
             'regex' => '/^(other)$/i',
         ],
@@ -121,10 +117,6 @@ class LibrarySelectionTransformer extends AbstractTransformer
         [
             'value' => LibrarySelection::PCR,
             'regex' => '/^(pcr)$/i',
-        ],
-        [
-            'value' => LibrarySelection::POLYA,
-            'regex' => '/^(polya)$/i',
         ],
         [
             'value' => LibrarySelection::RACE,

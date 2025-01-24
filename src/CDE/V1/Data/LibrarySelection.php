@@ -9,12 +9,7 @@ enum LibrarySelection implements ArrayAccess
 {
     use ValidatorTrait;
 
-    case MNASE;
-    case NOT_APPLICABLE;
     case AFFINITY_ENRICHMENT;
-    case MIRNA_SIZE_FRACTIONATION;
-    case POLY_T_ENRICHMENT;
-    case RRNA_DEPLETION;
     case FIVE_METHYLCYTIDINE_ANTIBODY;
     case CAGE;
     case CDNA;
@@ -32,25 +27,28 @@ enum LibrarySelection implements ArrayAccess
     case MBD2_PROTEIN_METHYL_CPG_BINDING_DOMAIN;
     case MDA;
     case MF;
+    case MIRNA_SIZE_FRACTIONATION;
+    case MNASE;
     case MSLL;
-    case OLIGO_DT;
+    case NOT_APPLICABLE;
     case OTHER;
     case PADLOCK_PROBES_CAPTURE_METHOD;
     case PCR;
-    case POLYA;
+    case POLY_A_ENRICHED;
     case RACE;
     case RANDOM;
     case RANDOM_PCR;
     case REDUCED_REPRESENTATION;
     case REPEAT_FRACTIONATION;
     case RESTRICTION_DIGEST;
+    case RRNA_DEPLETION;
     case RT_PCR;
     case SIZE_FRACTIONATION;
     case UNSPECIFIED;
 
     const CDE_ID = 6347743;
 
-    const URL = 'https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=6347743%20and%20ver_nr=1.0';
+    const URL = 'https://cadsr.cancer.gov/onedata/dmdirect/NIH/NCI/CO/CDEDD?filter=CDEDD.ITEM_ID=6347743%20and%20ver_nr=2.0';
 
     const DESCRIPTION = 'The type of systematic actions performed to select or enrich DNA fragments used in analysis by high-throughput sequencing.';
 
@@ -90,10 +88,10 @@ enum LibrarySelection implements ArrayAccess
             'description' => 'A RNA library that has been fractionated by size exclusion methods to enrich for microRNAs.',
         ],
         [
-            'value' => self::POLY_T_ENRICHMENT,
-            'permissible_value' => 'Poly-T Enrichment',
-            'long_name' => 'Poly-T Enriched Genomic Library',
-            'public_id' => 7537071,
+            'value' => self::POLY_A_ENRICHED,
+            'permissible_value' => 'Poly-A Enriched Genomic Library',
+            'long_name' => 'Poly-A Enriched Genomic Library',
+            'public_id' => 14901531,
             'concept_code' => ['C163988'],
             'description' => 'A genomic library where the sample has been subjected to enrichment via binding to immobilized poly-T oligonucleotides, which will preferentially isolate polyadenylated (poly-A) RNAs.',
         ],
@@ -250,14 +248,6 @@ enum LibrarySelection implements ArrayAccess
             'description' => 'Methylation Spanning Linking Library',
         ],
         [
-            'value' => self::OLIGO_DT,
-            'permissible_value' => 'Oligo-dT',
-            'long_name' => 'Oligo-dT',
-            'public_id' => 6287896,
-            'concept_code' => [],
-            'description' => 'Enrichment of messenger RNA (mRNA) by hybridization to Oligo-dT.',
-        ],
-        [
             'value' => self::OTHER,
             'permissible_value' => 'Other',
             'long_name' => 'Other Sequencing Library Method',
@@ -296,7 +286,8 @@ enum LibrarySelection implements ArrayAccess
             'public_id' => 6287902,
             'concept_code' => [],
             'description' => 'Rapid amplification of cDNA ends.',
-        ],  [
+        ],
+        [
             'value' => self::RANDOM,
             'permissible_value' => 'Random',
             'long_name' => 'Random',
