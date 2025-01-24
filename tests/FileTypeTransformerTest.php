@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 class FileTypeTransformerTest extends TestCase
 {
-    public function testBedpeFormatInput()
+    public function test_bedpe_format_input()
     {
         $this->assertTrue(FileType::validate('BEDPE Format'));
         $this->assertTrue(FileType::validate(FileTypeTransformer::transform('bedpe format', 'permissible_value')));
@@ -14,7 +14,7 @@ class FileTypeTransformerTest extends TestCase
         $this->assertTrue(FileType::validate(FileTypeTransformer::transform('BEDPE Format', 'permissible_value')));
     }
 
-    public function testPlainTextInput()
+    public function test_plain_text_input()
     {
         $this->assertTrue(FileType::validate('TXT'));
         $this->assertTrue(FileType::validate(FileTypeTransformer::transform('plain text data format', 'permissible_value')));
@@ -23,7 +23,7 @@ class FileTypeTransformerTest extends TestCase
         $this->assertTrue(FileType::validate(FileTypeTransformer::transform('txt', 'permissible_value')));
     }
 
-    public function testVCFInput()
+    public function test_vcf_input()
     {
         $this->assertTrue(FileType::validate('VCF'));
         $this->assertTrue(FileType::validate(FileTypeTransformer::transform('vcf', 'permissible_value')));

@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 class SexAtBirthTransformerTest extends TestCase
 {
-    public function testMaleInput()
+    public function test_male_input()
     {
         $this->assertTrue(SexAtBirth::validate('Male'));
         $this->assertTrue(SexAtBirth::validate(SexAtBirthTransformer::transform('MALE', 'permissible_value')));
@@ -15,7 +15,7 @@ class SexAtBirthTransformerTest extends TestCase
         $this->assertTrue(SexAtBirth::validate(SexAtBirthTransformer::transform('M', 'permissible_value')));
     }
 
-    public function testFemaleInput()
+    public function test_female_input()
     {
         $this->assertTrue(SexAtBirth::validate('Female'));
         $this->assertTrue(SexAtBirth::validate(SexAtBirthTransformer::transform('FEMALE', 'permissible_value')));
@@ -24,7 +24,7 @@ class SexAtBirthTransformerTest extends TestCase
         $this->assertTrue(SexAtBirth::validate(SexAtBirthTransformer::transform('F', 'permissible_value')));
     }
 
-    public function testUnknownInput()
+    public function test_unknown_input()
     {
         $this->assertFalse(SexAtBirth::validate('Dog'));
         $this->assertFalse(SexAtBirth::validate(SexAtBirthTransformer::transform('Cat', 'permissible_value')));

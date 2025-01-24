@@ -272,14 +272,6 @@ enum LibrarySelection implements ArrayAccess
             'description' => 'A method for amplifying a DNA base sequence using multiple rounds of heat denaturation of the DNA and annealing of oligonucleotide primers complementary to flanking regions in the presence of a heat-stable polymerase. This results in duplication of the targeted DNA region. Newly synthesized DNA strands can subsequently serve as additional templates for the same primer sequences, so that successive rounds of primer annealing, strand elongation, and dissociation produce rapid and highly specific amplification of the desired sequence. PCR also can be used to detect the existence of the defined sequence in a DNA sample.',
         ],
         [
-            'value' => self::POLYA,
-            'permissible_value' => 'PolyA',
-            'long_name' => 'RNA Polyadenylation',
-            'public_id' => 2581947,
-            'concept_code' => ['C18947'],
-            'description' => '1. The process of formation of poly(adenylic acid). 2. The covalent modification of a macromolecule (e.g., mRNA) by the formation of a polyadenylyl moiety covalently linked to the macromolecule.',
-        ],
-        [
             'value' => self::RACE,
             'permissible_value' => 'RACE',
             'long_name' => 'Rapid Amplification of cDNA Ends',

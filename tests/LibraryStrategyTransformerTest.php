@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 class LibraryStrategyTransformerTest extends TestCase
 {
-    public function testAMPLICONInput()
+    public function test_amplicon_input()
     {
         $this->assertTrue(LibraryStrategy::validate('AMPLICON'));
         $this->assertTrue(
@@ -20,7 +20,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testATACseqInput()
+    public function test_ata_cseq_input()
     {
         $this->assertTrue(LibraryStrategy::validate('ATAC-seq'));
         $this->assertTrue(
@@ -34,7 +34,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testBisulfiteSeqInput()
+    public function test_bisulfite_seq_input()
     {
         $this->assertTrue(LibraryStrategy::validate('Bisulfite-Seq'));
         $this->assertTrue(
@@ -48,7 +48,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testChIAPETInput()
+    public function test_ch_iapet_input()
     {
         $this->assertTrue(LibraryStrategy::validate('ChIA-PET'));
         $this->assertTrue(
@@ -62,7 +62,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testChIPSeqInput()
+    public function test_ch_ip_seq_input()
     {
         $this->assertTrue(LibraryStrategy::validate('ChIP-Seq'));
         $this->assertTrue(
@@ -76,7 +76,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testCLONEInput()
+    public function test_clone_input()
     {
         $this->assertTrue(LibraryStrategy::validate('CLONE'));
         $this->assertTrue(
@@ -90,7 +90,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testCLONEENDInput()
+    public function test_cloneend_input()
     {
         $this->assertTrue(LibraryStrategy::validate('CLONEEND'));
         $this->assertTrue(
@@ -104,7 +104,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testCTSInput()
+    public function test_cts_input()
     {
         $this->assertTrue(LibraryStrategy::validate('CTS'));
         $this->assertTrue(
@@ -118,7 +118,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testDNaseHypersensitivityInput()
+    public function test_d_nase_hypersensitivity_input()
     {
         $this->assertTrue(LibraryStrategy::validate('DNase-Hypersensitivity'));
         $this->assertTrue(
@@ -138,7 +138,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testESTInput()
+    public function test_est_input()
     {
         $this->assertTrue(LibraryStrategy::validate('EST'));
         $this->assertTrue(
@@ -152,7 +152,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testFAIRESeqInput()
+    public function test_faire_seq_input()
     {
         $this->assertTrue(LibraryStrategy::validate('FAIRE-Seq'));
         $this->assertTrue(
@@ -166,7 +166,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testFINISHINGInput()
+    public function test_finishing_input()
     {
         $this->assertTrue(LibraryStrategy::validate('FINISHING'));
         $this->assertTrue(
@@ -180,7 +180,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testFLcDNAInput()
+    public function test_f_lc_dna_input()
     {
         $this->assertTrue(LibraryStrategy::validate('FL-cDNA'));
         $this->assertTrue(
@@ -194,7 +194,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testHiCInput()
+    public function test_hi_c_input()
     {
         $this->assertTrue(LibraryStrategy::validate('Hi-C'));
         $this->assertTrue(
@@ -208,7 +208,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testMBDSeqInput()
+    public function test_mbd_seq_input()
     {
         $this->assertTrue(LibraryStrategy::validate('MBD-Seq'));
         $this->assertTrue(
@@ -222,7 +222,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testMeDIPSeqInput()
+    public function test_me_dip_seq_input()
     {
         $this->assertTrue(LibraryStrategy::validate('MeDIP-Seq'));
         $this->assertTrue(
@@ -236,7 +236,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testmiRNASeqInput()
+    public function testmi_rna_seq_input()
     {
         $this->assertTrue(LibraryStrategy::validate('miRNA-Seq'));
         $this->assertTrue(
@@ -250,7 +250,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testMNaseSeqInput()
+    public function test_m_nase_seq_input()
     {
         $this->assertTrue(LibraryStrategy::validate('MNase-Seq'));
         $this->assertTrue(
@@ -264,7 +264,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testMRESeqInput()
+    public function test_mre_seq_input()
     {
         $this->assertTrue(LibraryStrategy::validate('MRE-Seq'));
         $this->assertTrue(
@@ -278,7 +278,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testncRNASeqInput()
+    public function testnc_rna_seq_input()
     {
         $this->assertTrue(LibraryStrategy::validate('ncRNA-Seq'));
         $this->assertTrue(
@@ -292,7 +292,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testOtherInput()
+    public function test_other_input()
     {
         $this->assertTrue(LibraryStrategy::validate('Other'));
         $this->assertTrue(
@@ -312,7 +312,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testPOOLCLONEInput()
+    public function test_poolclone_input()
     {
         $this->assertTrue(LibraryStrategy::validate('POOLCLONE'));
         $this->assertTrue(
@@ -326,7 +326,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testRADSeqInput()
+    public function test_rad_seq_input()
     {
         $this->assertTrue(LibraryStrategy::validate('RAD-Seq'));
         $this->assertTrue(
@@ -340,7 +340,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testRIPSeqInput()
+    public function test_rip_seq_input()
     {
         $this->assertTrue(LibraryStrategy::validate('RIP-Seq'));
         $this->assertTrue(
@@ -354,7 +354,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testRNASeqInput()
+    public function test_rna_seq_input()
     {
         $this->assertTrue(LibraryStrategy::validate('RNA-Seq'));
         $this->assertTrue(
@@ -368,7 +368,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testSELEXInput()
+    public function test_selex_input()
     {
         $this->assertTrue(LibraryStrategy::validate('SELEX'));
         $this->assertTrue(
@@ -382,7 +382,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testSingleNucleusATACSeqInput()
+    public function test_single_nucleus_atac_seq_input()
     {
         $this->assertTrue(LibraryStrategy::validate('snATAC-Seq'));
         $this->assertTrue(
@@ -402,7 +402,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testssRNAseqInput()
+    public function testss_rn_aseq_input()
     {
         $this->assertTrue(LibraryStrategy::validate('ssRNA-seq'));
         $this->assertTrue(
@@ -416,7 +416,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testSyntheticLongReadInput()
+    public function test_synthetic_long_read_input()
     {
         $this->assertTrue(LibraryStrategy::validate('Synthetic-Long-Read'));
         $this->assertTrue(
@@ -436,7 +436,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testTargetedCaptureInput()
+    public function test_targeted_capture_input()
     {
         $this->assertTrue(LibraryStrategy::validate('Targeted-Capture'));
         $this->assertTrue(
@@ -450,7 +450,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testTetheredChromatinConformationCaptureInput()
+    public function test_tethered_chromatin_conformation_capture_input()
     {
         $this->assertTrue(LibraryStrategy::validate('Tethered Chromatin Conformation Capture'));
         $this->assertTrue(
@@ -470,7 +470,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testTnSeqInput()
+    public function test_tn_seq_input()
     {
         $this->assertTrue(LibraryStrategy::validate('Tn-Seq'));
         $this->assertTrue(
@@ -484,7 +484,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testValidationInput()
+    public function test_validation_input()
     {
         $this->assertTrue(LibraryStrategy::validate('Validation'));
         $this->assertTrue(
@@ -498,7 +498,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testWCSInput()
+    public function test_wcs_input()
     {
         $this->assertTrue(LibraryStrategy::validate('WCS'));
         $this->assertTrue(
@@ -512,7 +512,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testWGAInput()
+    public function test_wga_input()
     {
         $this->assertTrue(LibraryStrategy::validate('WGA'));
         $this->assertTrue(
@@ -526,7 +526,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testWGSInput()
+    public function test_wgs_input()
     {
         $this->assertTrue(LibraryStrategy::validate('WGS'));
         $this->assertTrue(
@@ -546,7 +546,7 @@ class LibraryStrategyTransformerTest extends TestCase
         );
     }
 
-    public function testWXSInput()
+    public function test_wxs_input()
     {
         $this->assertTrue(LibraryStrategy::validate('WXS'));
         $this->assertTrue(

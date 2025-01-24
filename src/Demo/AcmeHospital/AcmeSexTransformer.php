@@ -12,7 +12,7 @@ class AcmeSexTransformer extends SexTransformer
 {
     public static function getMappings(): array
     {
-        //@phpstan-ignore-next-line
+        // @phpstan-ignore-next-line
         $mappings = SexSexTransformer::$MAPPINGS;
 
         $mappings[] =

@@ -34,7 +34,7 @@ trait PositiveNumberValidatorTrait
      */
     public function offsetSet(mixed $offset, mixed $value): void
     {
-        throw new ReadOnlyArrayAccess();
+        throw new ReadOnlyArrayAccess;
     }
 
     /**
@@ -42,6 +42,6 @@ trait PositiveNumberValidatorTrait
      */
     public function offsetUnset(mixed $offset): void
     {
-        throw new ReadOnlyArrayAccess();
+        throw new ReadOnlyArrayAccess;
     }
 }
