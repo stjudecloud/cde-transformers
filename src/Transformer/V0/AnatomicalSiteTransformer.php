@@ -11,7 +11,7 @@ class AnatomicalSiteTransformer extends AbstractTransformer
 {
     protected static array $MAPPINGS = [
         [
-            'value' => AnatomicalSite::UNKNOWN,
+            'value' => null,
             'regex' => '/^.*$/i', // Matches any string
         ],
     ];
