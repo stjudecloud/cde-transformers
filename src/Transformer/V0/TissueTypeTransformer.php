@@ -2,7 +2,7 @@
 
 namespace CCDI\Transformer\V0;
 
-use CCDI\CDE\V2\Data\TissueType;
+use CCDI\CDE\V1\Data\TissueType;
 
 /**
  * @method static string|null|TissueType transform($permissibleValue, $key = null)
@@ -13,10 +13,6 @@ class TissueTypeTransformer extends AbstractTransformer
         [
             'value' => TissueType::NOT_REPORTED,
             'regex' => '/^(not reported)$/i',
-        ],
-        [
-            'value' => TissueType::ABNORMAL,
-            'regex' => '/^(abnormal)$/i',
         ],
         [
             'value' => TissueType::NORMAL,
@@ -31,20 +27,8 @@ class TissueTypeTransformer extends AbstractTransformer
             'regex' => '/^(tumor|tumour)$/i',
         ],
         [
-            'value' => TissueType::NON_NEOPLASTIC,
-            'regex' => '/^(non(-| )neoplastic)$/i',
-        ],
-        [
-            'value' => TissueType::UNAVAILABLE,
-            'regex' => '/^(unavailable)$/i',
-        ],
-        [
             'value' => TissueType::UNKNOWN,
             'regex' => '/^(unknown)$/i',
-        ],
-        [
-            'value' => TissueType::UNSPECIFIED,
-            'regex' => '/^(unspecified)$/i',
         ],
     ];
 }
