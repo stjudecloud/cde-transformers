@@ -3,11 +3,11 @@
 namespace CCDI\CDE\V1\Data;
 
 use ArrayAccess;
-use CCDI\CDE\Validator\PositiveNumberValidatorTrait;
+use CCDI\CDE\Validator\StringValidatorTrait;
 
 enum SampleId implements ArrayAccess
 {
-    use PositiveNumberValidatorTrait;
+    use StringValidatorTrait;
 
     const CDE_ID = 15100774;
 
