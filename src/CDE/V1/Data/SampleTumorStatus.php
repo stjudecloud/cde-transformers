@@ -5,7 +5,7 @@ namespace CCDI\CDE\V1\Data;
 use ArrayAccess;
 use CCDI\CDE\Validator\ValidatorTrait;
 
-enum TissueType implements ArrayAccess
+enum SampleTumorStatus implements ArrayAccess
 {
     use ValidatorTrait;
 
