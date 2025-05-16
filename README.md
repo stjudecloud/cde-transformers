@@ -45,15 +45,15 @@ This demo transformer has been created to transform the values of `boy` to the C
 Another example follows for transforming Swedish spelling of `Normal`:
 
 ```php
-class AcmeSampleTumorStatusTransformer extends SampleTumorStatusTransformer
+class AcmeTissueTypeTransformer extends TissueTypeTransformer
 {
     public static function getMappings(): array
     {
-        $mappings = SampleTumorStatusTransformer::$MAPPINGS;
+        $mappings = TissueTypeTransformer::$MAPPINGS;
 
         $mappings[] =
             [
-                'value' => SampleTumorStatus::NORMAL,
+                'value' => TissueType::NORMAL,
                 'regex' => '/^(vanligt)$/i'
             ];
 
