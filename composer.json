@@ -10,15 +10,15 @@
         }
     ],
     "autoload": {
-      "psr-4": {
-        "CCDI\\": "src/"
-      }
+        "psr-4": {
+            "CCDI\\": "src/"
+        }
     },
     "require": {
-      "php": ">=8.2.7"
+        "php": ">=8.2.7"
     },
     "require-dev": {
-      "laravel/pint": "^1.15",
+        "laravel/pint": "^1.15",
         "phpunit/phpunit": "^10.3",
         "larastan/larastan": "*"
     }

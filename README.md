@@ -2,9 +2,9 @@
 
 ## Overview
 
-A PHP package to transform your gnomics values into permissible values for commonly used CDEs within the CCDI API.
+A PHP package to transform your genomics values into permissible values for commonly used CDEs within the CCDI API.
 
-The values you have within your system may not match the permissible values for the CDEs. This package provides a way to transform your values into permissible values for the CDEs. As well as providing an `AbstractTransformer` class that can be extended to prodice custom transformations.
+The values you have within your system may not match the permissible values for the CDEs. This package provides a way to transform your values into permissible values for the CDEs. As well as providing an `AbstractTransformer` class that can be extended to produce custom transformations.
 
 ## Requirements
 
@@ -12,7 +12,7 @@ This package requires the following to work as expected:
 
 - PHP 8.2.7
 
-Optional:   
+Optional (but recommended):
 
 - PHPUnit ^10.3
 
@@ -36,9 +36,9 @@ $femalePermissibleValue = SexTransformer::transform('FEMALE')['permissible_value
 
 Also see `index.php` for more examples.
 
-## Custom Tranformers
+## Custom Transformers
 
-A demo Customer Transform exists in `src/Demo/AcmeHospital/AcmeSexTransformer.php`. This can be used as a starting point for creating your own custom transformers.
+A demo custom transformer exists in `src/Demo/AcmeHospital/AcmeSexTransformer.php`. This can be used as a starting point for creating your own custom transformers.
 
 This demo transformer has been created to transform the values of `boy` to the CDE value for `Male` and `girl` to the CDE value for `Female`.
 
@@ -64,11 +64,9 @@ class AcmeTissueTypeTransformer extends TissueTypeTransformer
 
 ## CDE Versions
 
-Each CDE's permissible values, long name, concept code, CDE version, description CADsr URL, and public_id are harded coded into a Data class, e.g. `src/CDE/V1/Data/Sex.php`. This is to ensure that the permissible values are always up to date with the CDEs.
+Each CDE's permissible values, long name, concept code, CDE version, description caDSR URL, and public_id are hard-coded into a Data class, e.g. `src/CDE/V1/Data/Sex.php`. This is to ensure that the permissible values are always up to date with the CDEs.
 
 Once a CDE is released, a new version of the package can be released with the new permissible values, long names, etc.
-
-Feel free to create a pull request to add new CDEs.
 
 ## Tests
 
