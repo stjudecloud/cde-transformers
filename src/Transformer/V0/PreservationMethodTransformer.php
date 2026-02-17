@@ -80,6 +80,10 @@ class PreservationMethodTransformer extends AbstractTransformer
             'regex' => '/^(not applicable)$/i',
         ],
         [
+            'value' => PreservationMethod::NOT_REPORTED,
+            'regex' => '/^(not reported)$/i',
+        ],
+        [
             'value' => PreservationMethod::OCT,
             'regex' => '/^(oct)$/i',
         ],

@@ -179,6 +179,14 @@ enum PreservationMethod implements ArrayAccess
             'description' => 'Determination of a value is not relevant in the current context.',
         ],
         [
+            'value' => self::NOT_REPORTED,
+            'permissible_value' => 'Not Reported',
+            'long_name' => 'Not Reported',
+            'public_id' => 2572231,
+            'concept_code' => ['C43234'],
+            'description' => 'Not provided or available.',
+        ],
+        [
             'value' => self::OCT,
             'permissible_value' => 'OCT',
             'long_name' => 'Optimal Cutting Temperature Compound',
