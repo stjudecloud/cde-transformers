@@ -140,6 +140,14 @@ class PreservationMethodTransformerTest extends TestCase
         $this->assertTrue(PreservationMethod::validate(PreservationMethodTransformer::transform('Not Applicable', 'permissible_value')));
     }
 
+    public function test_not_reported_transform()
+    {
+        $this->assertTrue(PreservationMethod::validate('Not Reported'));
+        $this->assertTrue(PreservationMethod::validate(PreservationMethodTransformer::transform('not reported', 'permissible_value')));
+        $this->assertTrue(PreservationMethod::validate(PreservationMethodTransformer::transform('NOT REPORTED', 'permissible_value')));
+        $this->assertTrue(PreservationMethod::validate(PreservationMethodTransformer::transform('Not Reported', 'permissible_value')));
+    }
+
     public function test_oct_transform()
     {
         $this->assertTrue(PreservationMethod::validate('OCT'));
